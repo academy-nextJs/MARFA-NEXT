@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/HomeContainer/HeaderComponent/Header";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,15 +27,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-      <header className="flex items-center justify-between w-full overflow-hidden">
+      <header className="flex justify-between items-center w-full overflow-hidden">
           <Header />
         </header>
         {children}
-        <footer className="flex flex-col gap-12 bg-[#2841e3] mx-auto px-7 py-8 rounded-3xl w-[95%]">
-          {/* <FooterContainer /> */}
-          footer
-        </footer>
-       
+             
       </body>
     </html>
   );
