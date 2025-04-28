@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "../../components/HomeContainer//HeaderComponent/Header";
+
 
 
 import FooterContainer from '../../components/HomeContainer/FooterComponent/FooterContainer';
@@ -31,7 +33,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         
       <header className="flex justify-between items-center w-full overflow-hidden">
-          {/* <Header /> */}
+          <Header />
         </header>
         <main>{children}</main>
         <footer className="flex flex-col gap-12 bg-[#F9F9F9] px-7 py-8 rounded-3xl w-full">
