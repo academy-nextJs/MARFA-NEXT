@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" dir="RTL">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         
       <header className="flex justify-between items-center w-full overflow-hidden">
