@@ -12,16 +12,16 @@ const Header = () => {
     <div className="lg:hidden">
        <h1>headerRight</h1>
       </div>
-      <aside className="items-center hidden gap-4 lg:flex">
+      <aside className="hidden lg:flex items-center gap-4">
         <ButtonSelected className="flex bg-[#F0F0F0] h-12 text-black">
-          <div className='w-2 h-2 bg-black rounded-full'></div>
+          <div className='bg-black rounded-full w-2 h-2'></div>
           خانه 
         </ButtonSelected>
         <ButtonSelected className="bg-[#F0F0F0] h-12 text-black">مقالات</ButtonSelected>
         <ButtonSelected className="bg-[#F0F0F0] h-12 text-black">درباره آلفا</ButtonSelected>
       </aside>
       <Image src={Logo.src} alt="Logo" width={78} height={78} />
-      <aside className="items-center hidden gap-4 lg:flex">
+      <aside className="hidden lg:flex items-center gap-4">
       <HeaderFastSelect />
       <HeaderOptionSelect />
         {/* <p orientation="vertical" className="w-[2px] h-6" /> */}
