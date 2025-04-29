@@ -1,6 +1,6 @@
 'use client';
 
-import { Select, SelectItem } from '@heroui/react';
+import { Select, SelectItem } from "@heroui/react";
 
 export function HeaderFastSelect() {
   return (

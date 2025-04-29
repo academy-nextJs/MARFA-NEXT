@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
 import Header from "../../components/HomeContainer//HeaderComponent/Header";
-
-
-
 import FooterContainer from '../../components/HomeContainer/FooterComponent/FooterContainer';
+import { HeroUIProvider } from "@heroui/react";
 
 
 const geistSans = Geist({
@@ -30,12 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="RTL">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className="px-12 py-4 overflow-x-hidden">
         
       <header className="flex justify-between items-center w-full overflow-hidden">
           <Header />
         </header>
-        <main>{children}</main>
+        <HeroUIProvider>{children}</HeroUIProvider>
         <footer className="flex flex-col gap-12 bg-[#F9F9F9] px-7 py-8 rounded-3xl w-full">
           <FooterContainer />
         </footer>
