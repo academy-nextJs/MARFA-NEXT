@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 import { Button } from "@heroui/react";
 import { useState } from "react";
@@ -8,14 +7,14 @@ type TProps = {
   children: React.ReactNode;
 };
 
-export function HeroSearchButton({ children }: TProps) {
+export function ButtonCourses({ children }: TProps) {
   const [Click, setClick] = useState(false);
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex gap-4 items-center ">
       <Button
         onPress={() => setClick(!Click)}
         radius="full"
-        className="flex flex-row bg-gray-200 px-5 py-3 rounded-full"
+        className="bg-gray-200 rounded-full px-5 py-3 flex-row flex"
       >
         {Click ? (
           <svg
@@ -39,7 +38,7 @@ export function HeroSearchButton({ children }: TProps) {
             viewBox="0 0 24 24"
             strokeWidth="2"
             stroke="black"
-            className="size-3"
+            className="size-3 "
           >
             <path
               strokeLinecap="round"
@@ -58,14 +57,14 @@ export function ButtonSelected({ children }: TProps) {
   const [select, setSelect] = useState(true);
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex gap-4 items-center ">
       <Button
         onPress={() => setSelect(!select)}
         radius="full"
-        className="flex flex-row bg-gray-200 px-5 py-3 rounded-full"
+        className="bg-gray-200 rounded-full px-5 py-3 flex-row flex"
       >
         {children}
-        {select ? <span className="bg-black rounded-full w-2 h-2" /> : ""}
+        {select ? <span className="w-2 h-2 bg-black rounded-full" /> : ""}
       </Button>
     </div>
   );

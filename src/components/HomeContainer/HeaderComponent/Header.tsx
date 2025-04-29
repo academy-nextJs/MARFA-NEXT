@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '/public/AlFA.png';
 import Image from 'next/image';
-import { ButtonSelected } from '@/components/common/Button';
+import { ButtonSelected } from '@/components/common/Button/button';
 import { HeaderFastSelect, HeaderOptionSelect } from '@/components/common/headerSelect';
 import { ClientButton } from '@/components/common/ClientUi';
 // import Button from "";
