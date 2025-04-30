@@ -1,8 +1,11 @@
 import React from 'react';
 import Carousel from '../../common/carousel';
-import LandingCard2 from '../../common/landingCard2';
-import { Category } from '@/src/types/types';
+// import LandingCard2 from '../../common/landingCard2';
+import { Category } from '@/types/types';
 import { SectionTop } from '../../common/sectionTop';
+import CardCategorySlider from '@/components/common/Card/CardCategorySlider/CardCategorySlider';
+import LandingCard2 from '@/components/common/landingCard2';
+// import LandingCard2 from '@/components/common/landingCard2';
 
 export default function CategoryCarousel({ data }: { data: Category[] }) {
   const breakpoints = {
@@ -17,7 +20,7 @@ export default function CategoryCarousel({ data }: { data: Category[] }) {
     },
   };
   return (
-    <div className="w-4/5 flex flex-col gap-6">
+    <div className="flex flex-col gap-6 w-4/5">
       <SectionTop
         mainText={['هر ملکی بخوای\n اینجا پیدا میشه!']} // Still supports string with \n
         subText={[

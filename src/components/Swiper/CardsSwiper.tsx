@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
+import CardCategorySlider from "../common/Card/CardCategorySlider/CardCategorySlider";
 
 const properties = [
   { id: 1, title: "ملک استخردار", image: "/image/10.png" },
@@ -33,16 +34,17 @@ export default function PropertySwiper() {
       >
         {properties.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="bg-white shadow-sm border rounded-xl overflow-hidden">
-              <Image
+            <div className="bg-black shadow-aum border rounded-xl h-auto overflow-hidden">
+              {/* <Image
                 src={item.image}
                 alt={item.title}
                 width={600}
                 height={400}
                 className="w-full h-64 object-cover"
-              />
+              /> */}
+              <CardCategorySlider/>
               <div className="p-4 font-semibold text-gray-800 text-right">
-                {item.title}
+                {/* {item.title} */}
               </div>
             </div>
           </SwiperSlide>
@@ -51,3 +53,6 @@ export default function PropertySwiper() {
     </div>
   );
 }
+
+
+

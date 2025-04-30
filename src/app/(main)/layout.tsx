@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
-import Header from "../../components/HomeContainer//HeaderComponent/Header";
-import FooterContainer from '../../components/HomeContainer/FooterComponent/FooterContainer';
+import Header from "../../components/HomeContainer/HeaderComponent/Header";
+
+import FooterContainer from "../../components/HomeContainer/FooterComponent/FooterContainer";
 import { HeroUIProvider } from "@heroui/react";
 
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -29,14 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en" dir="RTL">
       <body className="px-12 py-4 overflow-x-hidden">
-      <HeroUIProvider> 
-      <header className="flex justify-between items-center w-full overflow-hidden">
-          <Header />
-        </header>
-       {children}
-        <footer className="flex flex-col gap-12 bg-[#F9F9F9] px-7 py-8 rounded-3xl w-full">
-          <FooterContainer />
-        </footer>
+        <HeroUIProvider>
+          <header className="flex justify-between items-center w-full overflow-hidden">
+            <Header />
+          </header>
+          {children}
+          <footer className="flex flex-col gap-12 bg-[#F9F9F9] px-7 py-8 rounded-3xl w-full">
+            <FooterContainer />
+          </footer>
         </HeroUIProvider>
       </body>
     </html>
