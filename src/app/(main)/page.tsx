@@ -5,5 +5,7 @@ export default function Home() {
     <div className="flex justify-center items-center m-10 mx-auto text-4xl">
       <HeroSection />
     </div>
+  
+  
   );
 }
