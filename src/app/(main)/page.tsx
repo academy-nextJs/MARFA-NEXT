@@ -1,9 +1,9 @@
-import styles from "./page.module.css";
+import HeroSection from "@/components/HomeContainer/HeroSectionComponent/HeroSection";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      
+    <div className="flex justify-center items-center m-10 mx-auto text-4xl">
+      <HeroSection />
     </div>
   );
 }
