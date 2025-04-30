@@ -1,47 +1,43 @@
-"use client";
+'use client';
+import { Card, CardHeader, Image, Button, CardFooter } from '@heroui/react';
+import { PiArrowUpLeft } from 'react-icons/pi';
+import Link from 'next/link';
+import { LandingCard2Props } from '@/types/types';
 
-import { Card, CardFooter, Image, Button } from "@heroui/react";
-// import framerSvg from "../../../../assets/image/Frame.svg";
-function CardCategorySlider() {
+export default function LandingCard2({
+  text = '',
+  count,
+  src,
+  href,
+}: LandingCard2Props) {
   return (
-    <div className="max-w-[500px] gap-2 grid grid-cols-12 grid-rows-2 px-8">
-      <Card
-        isFooterBlurred
-        className="w-[344px] h-[345px] col-span-12 sm:col-span-7 rounded-3xl"
-      >
-        <div className="flex justify-end">
-          <div className="bg-gray-400 w-7 h-7 rounded-full flex items-center justify-center relative top-10 mx-4 opacity-25 z-50">
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="size-4 font-bold text-white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m19.5 19.5-15-15m0 0v11.25m0-11.25h11.25"
-              />
-            </svg> */}
-            <Image src="/Frame.svg" className="size-4 font-bold text-white" alt="framer" />
-          </div>
-        </div>
-
-        <Image
-          removeWrapper
-          alt="Relaxing app background"
-          className="z-0 w-full h-full object-cover rounded-3xl"
-          src="https://heroui.com/images/card-example-5.jpeg"
-        />
-        <CardFooter className="absolute bottom-0 z-10 ">
-          <Button radius="full" size="sm" className="text-white p-4">
-            آپارتمانی
+    <Card isBlurred className="relative border-none rounded-[10%] w-fit" >
+      <CardHeader className="top-2 left-2 z-10 absolute flex justify-end w-full">
+        <Link href={href}>
+          <Button
+            isIconOnly
+            className="bg-white/20 hover:bg-white/20 backdrop-blur-lg"
+            radius="full"
+            size="lg"
+          >
+            <PiArrowUpLeft color="white" size="1.5em" />
           </Button>
-        </CardFooter>
-      </Card>
-    </div>
+        </Link>
+      </CardHeader>
+      <div className="relative">
+        <Image
+          alt="Woman listing to music"
+          className="z-0 w-full object-cover aspect-square"
+          src={src ? src : 'https://heroui.com/images/card-example-3.jpeg'}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+      </div>
+      <CardFooter className="bottom-0 z-10 absolute flex gap-2 px-6 py-8 font-semibold text-white text-2xl">
+        <p>{text}</p>
+        {count && (
+          <span className="self-end font-light text-medium">{count} آپارتمان</span>
+        )}
+      </CardFooter>
+    </Card>
   );
 }
-export default CardCategorySlider;

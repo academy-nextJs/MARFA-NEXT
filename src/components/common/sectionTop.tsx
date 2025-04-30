@@ -30,13 +30,13 @@ export function SectionTop({
   return (
     <div className="flex flex-col gap-6">
       {chipText && (
-        <MyChip className="bg-transparent border-[#7575FE] border-1 text-[#7575FE]">
+        <MyChip className="bg-transparent border-[#6a6af8] border-1 text-[#7979fb] text-xl">
           {chipText}
         </MyChip>
       )}
 
       {/* Main Text */}
-      <h1 className="font-bold text-3xl whitespace-pre-line animate-bounce">
+      <h1 className="font-bold text-3xl whitespace-pre-lin">
         {renderMultilineText(mainText)}
       </h1>
 
