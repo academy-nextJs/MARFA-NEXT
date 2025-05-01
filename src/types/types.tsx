@@ -8,6 +8,12 @@ export interface LandingCard2Props {
   src?: string;
   href: string;
 }
+export interface LandingCard3Props {
+  text: string;
+  count?: number;
+  src?: string;
+  href: string;
+}
 export interface Category {
   id: string;
   name: string;

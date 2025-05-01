@@ -4,7 +4,7 @@ import { PiArrowUpLeft } from 'react-icons/pi';
 import Link from 'next/link';
 import { LandingCard2Props } from '@/types/types';
 
-export default function LandingCard2({
+export default function CategoryCarousel({
   text = '',
   count,
   src,
