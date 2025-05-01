@@ -4,16 +4,22 @@ import React from "react";
 import { Card, CardBody } from "@heroui/react";
 
 export default function CommentsCard({
+<<<<<<< HEAD
   text = "",
+=======
+>>>>>>> 9636f9b1c7ee0a2036c35f5742bbb286da5fb3d3
   name = " پارسا آقایی",
   date = "12 مرداد 1403",
   isActive = false,
   isHidden = false,
 }) {
+<<<<<<< HEAD
   // const CardClassSelected = "max-w-[385px] rounded-[32px] p-7 bg-[#7575fe] text-[#FFFFFF]";
   // const CardBodyClassSelected = "text-base font-medium";
   // const TagPSelected = 'w-[338px] h-[312px] text-justify';
   ///////////////////////TAG P LOREM
+=======
+>>>>>>> 9636f9b1c7ee0a2036c35f5742bbb286da5fb3d3
   //   لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
   //   استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
   //   ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و
