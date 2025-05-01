@@ -7,7 +7,7 @@ import { Navigation } from 'swiper/modules';
 
 import { Button } from '@heroui/react';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
-import { CarouselProps } from '@/src/types/types';
+import { CarouselProps } from '@/types/types';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
