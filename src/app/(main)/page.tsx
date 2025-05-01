@@ -4,16 +4,10 @@ import InfiniteCarousel from "@/components/common/InfiniteCarousel";
 import { SectionTop } from "@/components/common/sectionTop";
 import HeroSection from "@/components/HomeContainer/HeroSectionComponent/HeroSection";
 import CategoryCarousel from "@/components/HomeContainer/landingCategory/categoryCarousel";
-<<<<<<< HEAD
 import api from "@/utils/service/api";
 export default async function Home() {
   const { data } = await api.get('/categories');
   
-=======
-import { dataFocusVisibleClasses } from "@nextui-org/react";
-
-export default function Home() {
->>>>>>> A-landing-swiper2-4
   return (
     <>
       <main>
@@ -21,11 +15,7 @@ export default function Home() {
           <HeroSection />
         </div>
         <div className="flex justify-center items-center m-10 mx-auto text-4xl">
-<<<<<<< HEAD
             <CategoryCarousel data={data}/>
-=======
-          <CategoryCarousel data={dataFocusVisibleClasses} />
->>>>>>> A-landing-swiper2-4
         </div>
         <div >
           <DreamSection/>
