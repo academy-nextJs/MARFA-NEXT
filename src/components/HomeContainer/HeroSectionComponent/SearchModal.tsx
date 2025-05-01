@@ -39,7 +39,7 @@ const SearchModal: React.FC<FilterModalProps> = ({ isOpen, onClose }) => {
           <aside className='flex flex-col w-1/2'>
             <span className="mb-2 font-medium text-sm text-right">انتخاب مقصد</span>
             <Select label=" انتخاب کنید " className='w-1//2' radius='full' size='sm' >
-              <SelectItem>بابل</SelectItem>
+              <SelectItem>نور</SelectItem>
               <SelectItem>ساری</SelectItem>
             </Select>
           </aside>

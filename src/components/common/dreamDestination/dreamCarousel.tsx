@@ -25,7 +25,7 @@ export default function DreamCarousel() {
         // Create the new location object you want to add
         const newLocation: Locations = {
           id: '342',
-          area_name: 'سیرالئون',
+          area_name: 'ساری ',
           lat: '35.6892',
           long: '51.3890',
         };

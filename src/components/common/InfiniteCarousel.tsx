@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import { Button } from '@heroui/react';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 import CommonCardComment from './commonCardComment';
+import CommentsCard from './Card/CommentsCard/CommentsCard';
 const testimonials = [
   {
     text: 'خدمات عالی و رضایت بخش',
@@ -121,7 +122,7 @@ export default function InfiniteCarousel() {
             <SwiperSlide key={index}
             //  className={styles.slide}
              >
-              <CommonCardComment
+              <CommentsCard
                 text={testimonial.text}
                 name={testimonial.name}
                 date={testimonial.date}
