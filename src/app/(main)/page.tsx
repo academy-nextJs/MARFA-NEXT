@@ -1,10 +1,9 @@
 import HeroSection from "@/components/HomeContainer/HeroSectionComponent/HeroSection";
-// import CategoryCarousel from "@/components/HomeContainer/landingCategory/categoryCarousel";
-// import LandingPage from "./landing/page";
 import CategoryCarousel from "@/components/HomeContainer/landingCategory/categoryCarousel";
-import { dataFocusVisibleClasses } from "@nextui-org/react";
-// import CardsSwiper from "@/components/Swiper/CardsSwiper";
-export default function Home() {
+import api from "@/utils/service/api";
+export default async function Home() {
+  const { data } = await api.get('/categories');
+  
   return (
 
 <>
@@ -15,7 +14,7 @@ export default function Home() {
         
         </div>
         <div className="flex justify-center items-center m-10 mx-auto text-4xl">
-            <CategoryCarousel data={dataFocusVisibleClasses}/>
+            <CategoryCarousel data={data}/>
         </div>
         
     </main>
