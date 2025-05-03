@@ -30,7 +30,7 @@ export default function CategoryCarousel({
           className="z-0 w-full object-cover aspect-square"
           src={src ? src : 'https://heroui.com/images/card-example-3.jpeg'}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" /> */}
       </div>
       <CardFooter className="bottom-0 z-10 absolute flex gap-2 px-6 py-8 font-semibold text-white text-2xl">
         <p>{text}</p>

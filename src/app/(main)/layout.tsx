@@ -36,6 +36,7 @@ export default function RootLayout({
           <footer className="flex flex-col gap-12 bg-[#F9F9F9] px-7 py-8 rounded-3xl w-full">
             <FooterContainer />
           </footer>
+          <div id="modal-root"></div>
         </HeroUIProvider>
       </body>
     </html>

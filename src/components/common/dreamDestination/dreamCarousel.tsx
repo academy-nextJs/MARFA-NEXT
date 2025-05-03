@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 // import Carousel from '../common/carousel';
 // import LandingCard2 from '../common/landingCard2';
 import axios from 'axios';
-// import Loading from '../common/loading';
 import CategoryCarousel from '../Card/CardCategorySlider/CardCategorySlider';
 import Carousel from '../carousel';
 import Loading from '../loading';

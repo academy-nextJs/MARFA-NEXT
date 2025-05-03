@@ -1,13 +1,11 @@
-
-
-import { FilterModalProps } from '@/src/types/types';
 import { Select, SelectItem } from '@heroui/react';
 import ReactDOM from 'react-dom';
 import { ClientButton } from '../../common/Button/common-btn';
 import Calender from '../../common/Calender/calender';
 import CommonInput from '../../common/inputs/input-btn';
+import { FilterModalProps } from '@/types/types';
 
-const SearchModal: React.FC<FilterModalProps> = ({ isOpen, onClose }) => {
+const SearchModal: React.FC<FilterModalProps> = ({isOpen, onClose }) => {
   if (!isOpen) return null;
 
   const handleBackgroundClick = (e: React.MouseEvent) => {
