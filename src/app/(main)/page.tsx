@@ -1,6 +1,5 @@
 import SpecialDiscountCard from "@/components/common/Card/SpecialDiscountCard/SpecialDiscountCard";
 import DreamSection from "@/components/common/dreamDestination/dreamSectionContainer";
-// import DreamSection from "@/components/common/dreamDestination/dreamSectionContainer";
 import InfiniteCarousel from "@/components/common/InfiniteCarousel";
 import { SectionTop } from "@/components/common/sectionTop";
 import BrilliantHistory from "@/components/HomeContainer/BrilliantHistory/BrilliantHistory";
@@ -8,8 +7,9 @@ import HeroSection from "@/components/HomeContainer/HeroSectionComponent/HeroSec
 import LandingBuySellSection from "@/components/HomeContainer/LandingBuySellSection/LandingBuySellSection";
 import CategoryCarousel from "@/components/HomeContainer/landingCategory/categoryCarousel";
 import api from "@/utils/service/api";
+import LandingPage from "./landing/page";
 export default async function Home() {
-  const { data } = await api.get("/categories");
+  // const { data } = await api.get("/categories");
 
   return (
     <>
@@ -17,11 +17,11 @@ export default async function Home() {
         <div className="flex justify-center items-center m-10 mx-auto text-4xl">
           <HeroSection />
         </div>
-        <div className="flex justify-center items-center m-10 mx-auto text-4xl">
+        {/* <div className="flex justify-center items-center m-10 mx-auto text-4xl">
           <CategoryCarousel data={data} />
         </div>
         <div className="flex justify-center items-center m-10 mx-auto text-4xl">
-        <DreamSection/>
+       <DreamSection/>
         </div>
             <LandingBuySellSection/>
         <div className="flex justify-center items-center gap-4">
@@ -42,8 +42,8 @@ export default async function Home() {
           <div className="">
             
             <BrilliantHistory/>
-          </div>
-       
+          </div> */}
+       <LandingPage/>
       </main>
     </>
   );

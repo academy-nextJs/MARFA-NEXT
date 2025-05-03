@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper/types';
 import { Navigation } from 'swiper/modules';
-
 import { Button } from '@heroui/react';
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl';
 import { CarouselProps } from '@/types/types';
@@ -12,7 +11,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { LeftArrowIcon ,PinPointDoubleIcon,RightArrowIcon} from '../../../public/SvgComponent';
-// import { LeftArrowIcon, PinPointDoubleIcon, RightArrowIcon } from '@/src/assets/SvgComponent';
 
 export default function Carousel({
   children,

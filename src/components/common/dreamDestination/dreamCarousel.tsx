@@ -1,6 +1,5 @@
+
 import React, { useEffect, useState } from 'react';
-// import Carousel from '../common/carousel';
-// import LandingCard2 from '../common/landingCard2';
 import axios from 'axios';
 import CategoryCarousel from '../Card/CardCategorySlider/CardCategorySlider';
 import Carousel from '../carousel';
@@ -21,19 +20,16 @@ export default function DreamCarousel() {
         const { data } = await axios.get(
           'https://delta-project.liara.run/api/locations'
         );
-        // Create the new location object you want to add
+       
         const newLocation: Locations = {
           id: '342',
           area_name: 'ساری ',
           lat: '35.6892',
           long: '51.3890',
         };
-
-        // Add it to the existing data
         setLocations([...data, newLocation]);
         setLoading(false);
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      } catch (err: unknown) {
+        } catch (err: unknown) {
         setError('Failed to fetch data');
         setLoading(false);
       }
