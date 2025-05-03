@@ -1,7 +1,10 @@
+import SpecialDiscountCard from "@/components/common/Card/SpecialDiscountCard/SpecialDiscountCard";
 import DreamSection from "@/components/common/dreamDestination/dreamSectionContainer";
 import InfiniteCarousel from "@/components/common/InfiniteCarousel";
 import { SectionTop } from "@/components/common/sectionTop";
+import BrilliantHistory from "@/components/HomeContainer/BrilliantHistory/BrilliantHistory";
 import HeroSection from "@/components/HomeContainer/HeroSectionComponent/HeroSection";
+import LandingBuySellSection from "@/components/HomeContainer/HeroSectionComponent/landingSectionoffer/LandingBuySellSection/LandingBuySellSection";
 import CategoryCarousel from "@/components/HomeContainer/landingCategory/categoryCarousel";
 import api from "@/utils/service/api";
 export default async function Home() {
@@ -18,6 +21,16 @@ export default async function Home() {
         </div>
         <div>
           <DreamSection />
+          <div>
+            <LandingBuySellSection/>
+ 
+            </div>
+            <div className="flex justify-center items-center gap-4">
+            <SpecialDiscountCard/>
+            <SpecialDiscountCard/>
+            <SpecialDiscountCard/>
+            <SpecialDiscountCard/>
+          </div>
           <section>
             <SectionTop
               mainText={["نظرات کاربران درباره آلفا"]}
@@ -27,6 +40,10 @@ export default async function Home() {
             />
             <InfiniteCarousel />
           </section>
+          <div className="">
+            
+            <BrilliantHistory/>
+          </div>
         </div>
       </main>
     </>
