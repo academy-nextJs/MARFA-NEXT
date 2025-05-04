@@ -17,10 +17,10 @@ export default async function LandingPage() {
   return (
     <div>
    
-        <div className="flex justify-center items-center m-10 mx-auto text-4xl">
+        <div className="-left-20 flex justify-center items-center text-xl">
           <CategoryCarousel data={data} />
         </div>
-        <div className="flex justify-center items-center m-10 mx-auto text-4xl">
+        <div>  
          <DreamSection/>
         </div>
             <LandingBuySellSection/>

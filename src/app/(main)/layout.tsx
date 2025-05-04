@@ -27,12 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="RTL">
-      <body className="px-12 py-4 overflow-x-hidden">
+      <body className="bg-white mx-auto px-4 py-4 max-w-screen-2xl overflow-x-hidden">
         <HeroUIProvider>
           <header className="flex justify-between items-center w-full overflow-hidden">
             <Header />
           </header>
-          {children}
+          {children} 
           <footer className="flex flex-col gap-12 bg-[#F9F9F9] px-7 py-8 rounded-3xl w-full">
             <FooterContainer />
           </footer>

@@ -28,7 +28,7 @@ export default function CategoryCarousel({
         <Image
           alt="Woman listing to music"
           className="z-0 w-full object-cover aspect-square"
-          src={src ? src : 'https://heroui.com/images/card-example-3.jpeg'}
+          src={src ? src : 'https://www.houseplans.net/news/wp-content/uploads/2023/07/51550-768.jpeg'}
         />
         {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" /> */}
       </div>
