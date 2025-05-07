@@ -24,11 +24,11 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>){
   return (
     <html lang="en" dir="RTL">
       <body className="bg-white mx-auto px-4 py-4 max-w-screen-2xl overflow-x-hidden">
-        <HeroUIProvider>
+        {/* <HeroUIProvider> */}
           <header className="flex justify-between items-center w-full overflow-hidden">
             <Header />
           </header>
@@ -37,7 +37,7 @@ export default function RootLayout({
             <FooterContainer />
           </footer>
           <div id="modal-root"></div>
-        </HeroUIProvider>
+        {/* </HeroUIProvider> */}
       </body>
     </html>
   );

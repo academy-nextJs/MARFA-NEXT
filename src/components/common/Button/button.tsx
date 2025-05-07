@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@heroui/react";
+import Image from "next/image";
 import { useState } from "react";
 
 type TProps = {
@@ -69,3 +70,36 @@ export function ButtonSelected({ children }: TProps) {
     </div>
   );
 }
+export function ButtonBack({ children }: TProps) {
+  const [select, setSelect] = useState(true);
+
+  return (
+    <div className="flex gap-4 items-center ">
+      <Button
+        onPress={() => setSelect(!select)}
+        radius="full"
+        className="bg-gray-200 rounded-full px-5 py-3 flex-row flex"
+      >
+        {children}
+        <Image src="/image/back.png" alt="back" width={5} height={5} />
+      </Button>
+    </div>
+  );
+}
+export function ButtonEmpty({ children }: TProps) {
+  // const [select, setSelect] = useState(true);
+
+  return (
+    <div className="flex gap-4 items-center ">
+      <button
+        // onPress={() => setSelect(!select)}
+        
+        // radius="full"
+        className="bg-white/20 flex-row flex  justify-center items-center w-10 h-10 rounded-full"
+      >
+        {children}
+      </button>
+    </div>
+  );
+}
+

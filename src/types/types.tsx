@@ -72,6 +72,14 @@ export type ClientButtonProps = ButtonProps & {
 };
 
 
+export type TPropsClient ={
+  name:string,
+  date:string,
+  isActive:boolean,
+}
+
+
+
 
 export type UserProps = {
     name: string;
