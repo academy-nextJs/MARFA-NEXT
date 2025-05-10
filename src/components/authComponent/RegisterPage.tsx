@@ -46,7 +46,7 @@ const RegisterPage = ({titleAuth,textAuth,textAuthBtn}) => {
               <p className="text-gray-500 text-sm">یا</p>
               <Divider className="flex-grow w-1/3" />
             </div>
-
+            
             <div className="flex flex-col gap-4">
               <span className="text-right">ایمیل</span>
               <Input type="email" placeholder="ایمیل خود را وارد کنید" />
