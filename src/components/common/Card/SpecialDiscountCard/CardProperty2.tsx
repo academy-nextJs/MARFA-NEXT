@@ -1,7 +1,9 @@
 "use client";
 
-import { ImageSlider } from "./ImageSlider";
-import { PropertyInfo } from "./PropertyInfo";
+import { ImageSlider2 } from "./ImageSlider2";
+import { PropertyInfo2 } from "./PropertyInfo2";
+
+
 
 interface PropertyCardProps {
   images: string[];
@@ -15,18 +17,17 @@ interface PropertyCardProps {
   rating : number;
 }
 
-export const CardProperty: React.FC<PropertyCardProps> = (props) => {
+export const CardProperty2: React.FC<PropertyCardProps> = (props) => {
   return (
     <div className=" h-[266px]  w-[287px] max-w-xs rounded-2xl">
-      <ImageSlider images={props.images} rating={props.rating} discountPercent={15} />
-      <PropertyInfo
+      <ImageSlider2 images={props.images} />
+      <PropertyInfo2
         title={props.title}
         location={props.location}
         bedrooms={props.bedrooms}
         bathrooms={props.bathrooms}
         guests={props.guests}
         price={props.price}
-        oldPrice={props.oldPrice}
 
       />
     </div>

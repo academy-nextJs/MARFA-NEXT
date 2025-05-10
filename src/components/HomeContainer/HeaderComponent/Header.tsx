@@ -1,3 +1,4 @@
+
 import React from "react";
 import Logo from "/public/AlFA.png";
 import Image from "next/image";
@@ -7,9 +8,11 @@ import {
   HeaderOptionSelect,
 } from "@/components/common/headerSelect";
 import { ClientButton } from "@/components/common/ClientUi";
-import { Button, Divider } from "@heroui/react";
+import { Button } from "@heroui/react";
+import {Divider} from "@heroui/divider";
 import Link from "next/link";
 import DarkSwitcher from "@/components/DarkSwitcher";
+import HambergerMenu from "./HambergerMenu";
 
 
 
@@ -17,9 +20,9 @@ const Header = () => {
   return (
     <>
       <div className="lg:hidden">
-        <h1>Mobilemeno</h1>
+        <HambergerMenu/>
       </div>
-      <aside className="hidden lg:flex items-center gap-4">
+      <aside className="hidden md:flex items-center gap-4">
         <ButtonSelected className="flex bg-[#F0F0F0]  h-12 text-black">
           <div className="rounded-full w-2 h-2"></div>
           خانه
@@ -33,11 +36,11 @@ const Header = () => {
       </aside>
       <Image 
       src={Logo.src} alt="Logo" width={78} height={78} />
-      <aside className="hidden lg:flex items-center gap-4">
+      <aside className="hidden lg:flex justify-center items-center gap-4">
         <HeaderOptionSelect />
         <HeaderFastSelect />
         <Link href='/register'>
-          <Divider orientation="vertical" className="w-[2px] h-6" />
+          {/* <Divider orientation="vertical" className="w-[2px] h-6" /> */}
           <Button className="bg-[#7575FE] h-12 text-white">
             ثبت نام / ورود
           </Button>

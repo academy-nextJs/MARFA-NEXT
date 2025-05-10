@@ -1,4 +1,5 @@
 import SpecialDiscountCard from "@/components/common/Card/SpecialDiscountCard/SpecialDiscountCard";
+import SpecialDiscountCard2 from "@/components/common/Card/SpecialDiscountCard/SpecialDiscountCard2";
 import DreamSection from "@/components/common/dreamDestination/dreamSectionContainer";
 import InfiniteCarousel from "@/components/common/InfiniteCarousel";
 import { SectionTop } from "@/components/common/sectionTop";
@@ -9,23 +10,57 @@ import api from "@/utils/service/api";
 
 export default async function LandingPage() {
   const { data } = await api.get("/categories");
-  //   const { data } = await api.get('/categories');
+
+  const { data: offer } = await api.get(
+    "/houses?limit=8&sort=price&order=DESC&transactionType="
+  );
+  if (!offer)
+    throw new Error(
+      "Failed to fetch Discounted Houses, Please try again later."
+    );
+
   return (
     <div>
-      <div className="-left-20 flex justify-center items-center text-xl">
+      <div className="-left-20 flex justify-center mb-16 items-center text-xl">
         <CategoryCarousel data={data} />
       </div>
+      {/* Offerrrrrrrrrrrrrrr */}
+      <LandingBuySellSection
+        title="تخفیفات "
+        text1="  تخفیفات ویژه"
+        text2=" برای شروع بهار "
+      />
+      <div className="flex justify-center mt-16 items-center gap-4">
+        {offer?.map((offer: any) => (
+          <SpecialDiscountCard data={offer} />
+        ))}
+      </div>
+
       <div>
         <DreamSection />
       </div>
-      <LandingBuySellSection />
-      <div className="flex justify-center items-center gap-4">
-        <SpecialDiscountCard />
-        <SpecialDiscountCard />
-        <SpecialDiscountCard />
-        <SpecialDiscountCard />
+
+    
+      <div className="">
+        <BrilliantHistory />
       </div>
-      <section>
+
+
+      {/*  Buy && ........ */}
+      <LandingBuySellSection
+        title="خرید و فروش"
+        text1="خرید و فروش های داغ"
+        text2="این هفته"
+      />
+      <div className="flex justify-center items-center my-10 gap-4">
+        {offer?.map((offer: any) => (
+          <SpecialDiscountCard2 data={offer} />
+        ))}
+      </div>
+
+      {/* commenttttttt */}
+
+      <section className="my-10">
         <SectionTop
           mainText={["نظرات کاربران درباره آلفا"]}
           subText={[
@@ -34,9 +69,6 @@ export default async function LandingPage() {
         />
         <InfiniteCarousel />
       </section>
-      <div className="">
-        <BrilliantHistory />
-      </div>
     </div>
   );
 }

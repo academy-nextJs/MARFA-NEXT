@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@heroui/divider": "^2.2.13",
     "@heroui/react": "^2.7.8",
     "@heroui/select": "^2.4.19",
     "@nextui-org/react": "^2.6.11",

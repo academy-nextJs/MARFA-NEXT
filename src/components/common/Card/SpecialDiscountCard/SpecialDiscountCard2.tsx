@@ -1,6 +1,7 @@
 "use client";
 
-import { CardProperty } from "./CardProperty";
+import { PropertyCard } from "./CardProperty";
+import { CardProperty2 } from "./CardProperty2";
 
 const dummyImages = [
   "/cardSlider2.png",
@@ -9,19 +10,19 @@ const dummyImages = [
 
 ];
 
-export default function SpecialDiscountCard({data}) {
+export default function SpecialDiscountCard2({data}) {
   return (
     <div className="flex justify-center  gap-4 w-[303px] h-[463px]">
-      <CardProperty
+      <CardProperty2
+    
         images={dummyImages}
         title={data.title}
         location= {data.address}
         bedrooms={data.rooms}
-        rating={Number(data.rate)}
         bathrooms={data.bathrooms}
         guests={data.capacity}
         price={Number(data.price)}
-        oldPrice={12000000}
+        rating={Number(data.rate)}
       />
     </div>
   );

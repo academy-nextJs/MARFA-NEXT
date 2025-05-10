@@ -10,7 +10,7 @@ interface PropertyInfoProps {
   oldPrice?: number;
 }
 
-export const PropertyInfo: React.FC<PropertyInfoProps> = ({
+export const PropertyInfo2: React.FC<PropertyInfoProps> = ({
   title,
   location,
   bedrooms,
