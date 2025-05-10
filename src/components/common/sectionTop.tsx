@@ -30,7 +30,7 @@ export function SectionTop({
   return (
     <div className="flex flex-col gap-6">
       {chipText && (
-        <MyChip className="bg-transparent border-[#6a6af8] border-1 text-[#7979fb] text-xl">
+        <MyChip className="bg-transparent   border-[#6a6af8] border-1 text-[#7979fb] text-xl">
           {chipText}
         </MyChip>
       )}
@@ -42,7 +42,7 @@ export function SectionTop({
 
       {/* Children or SubText */}
       {children || (
-        <p className="text-[#555555] whitespace-pre-line">
+        <p className="text-[#555555] dark:text-white whitespace-pre-line">
           {renderMultilineText(subText)}
         </p>
       )}

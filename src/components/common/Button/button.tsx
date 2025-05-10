@@ -15,7 +15,7 @@ export function ButtonCourses({ children }: TProps) {
       <Button
         onPress={() => setClick(!Click)}
         radius="full"
-        className="bg-gray-200 rounded-full px-5 py-3 flex-row flex"
+        className="bg-gray-200  dark:bg-gray-700 dark:text-white rounded-full px-5 py-3 flex-row flex"
       >
         {Click ? (
           <svg
@@ -62,7 +62,7 @@ export function ButtonSelected({ children }: TProps) {
       <Button
         onPress={() => setSelect(!select)}
         radius="full"
-        className="bg-gray-200 rounded-full px-5 py-3 flex-row flex"
+        className="bg-gray-200  dark:bg-zinc-800 dark:text-white rounded-full px-5 py-3 flex-row flex"
       >
         {children}
         {select ? <span className="w-2 h-2 bg-black rounded-full" /> : ""}
@@ -78,7 +78,7 @@ export function ButtonBack({ children }: TProps) {
       <Button
         onPress={() => setSelect(!select)}
         radius="full"
-        className="bg-gray-200 rounded-full px-5 py-3 flex-row flex"
+        className="bg-gray-200  dark:bg-gray-700 dark:text-white rounded-full px-5 py-3 flex-row flex"
       >
         {children}
         <Image src="/image/back.png" alt="back" width={5} height={5} />

@@ -11,7 +11,7 @@ const dummyImages = [
 
 export default function SpecialDiscountCard() {
   return (
-    <div className="flex justify-center gap-4 w-[303px] h-[463px]">
+    <div className="flex justify-center  gap-4 w-[303px] h-[463px]">
       <PropertyCard
         images={dummyImages}
         title="آپارتمان لوکس زعفرانیه"

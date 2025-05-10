@@ -12,7 +12,7 @@ export default function FooterContainer() {
       <Image src={LogoFooter.src} alt="Logo" width={96} height={96} />
       <Footer />
       <div className="flex gap-3">
-        <div className="p-2 rounded-2xl bg-white">
+        <div className="p-2 rounded-2xl dark:bg-gray-900  dark:text-white bg-white">
           <Image src={Foot1Image.src} alt="1" width={48} height={48} />
         </div>
         <div className="p-2 rounded-2xl bg-black">

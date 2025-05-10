@@ -19,16 +19,16 @@ const SearchModal: React.FC<FilterModalProps> = ({isOpen, onClose }) => {
       className="z-[9999] fixed inset-0 flex justify-center items-center bg-black/30 backdrop-blur-xs"
       onClick={handleBackgroundClick}
     >
-      <aside className="relative bg-white shadow-xl p-6 rounded-xl w-[700px]">
+      <aside className="relative bg-white  dark:text-white dark:bg-gray-900 shadow-xl p-6 rounded-xl w-[700px]">
         <aside className="flex flex-row gap-2 mb-6">
           <ClientButton className='bg-[#7575FE] h-9 text-white'>
-            <div className='bg-white rounded-full w-2 h-2'></div>
+            <div className='bg-white  rounded-full w-2 h-2'></div>
             رهن و اجاره
           </ClientButton>
-          <ClientButton className='bg-[#F0F0F0] h-9 text-black'>
+          <ClientButton className='bg-[#F0F0F0] dark:bg-[#7575FE] dark:text-white h-9 text-black'>
             رزرو ملک
           </ClientButton>
-          <ClientButton className='bg-[#F0F0F0] h-9 text-black'>
+          <ClientButton className='bg-[#F0F0F0] dark:bg-[#7575FE]  dark:text-white  h-9 text-black'>
             خرید و فروش
           </ClientButton>
         </aside>
@@ -46,7 +46,7 @@ const SearchModal: React.FC<FilterModalProps> = ({isOpen, onClose }) => {
             <CommonInput
               label="تعداد نفرات"
               placeholder="وارد کنید"
-              className='bg-[#f4f3f3] p-4 rounded-full h-12'
+              className='bg-[#f4f3f3]  dark:bg-zinc-800 p-4 rounded-full h-12'
             />
           </aside>
         </aside>

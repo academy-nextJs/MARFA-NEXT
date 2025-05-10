@@ -20,22 +20,22 @@ export const PropertyInfo: React.FC<PropertyInfoProps> = ({
   oldPrice,
 }) => {
   return (
-    <div className="p-4 space-y-2 text-sm text-gray-800">
+    <div className="p-4 space-y-2 text-sm dark:text-white  text-gray-800">
       <h2 className="font-bold text-lg">{title}</h2>
-      <div className="flex gap-2 text-base font-medium text-[#000000]">
+      <div className="flex gap-2 text-base font-medium dark:text-white  text-[#000000]">
         <Image src="/Frame 12.png" alt="frameLocation" width={25} height={25} />
         {location}
       </div>
       <div className="flex items-center justify-between text-xs mt-2">
-        <span className="flex items-center justify-center text-base font-medium text-black gap-2">
+        <span className="flex items-center justify-center text-base font-medium dark:text-white  text-black gap-2">
           <Image src="/Frame 14.png" alt="bedroom" width={25} height={25} />
           {bedrooms} خواب
         </span>
-        <span className="flex items-center justify-center text-base font-medium text-black gap-2">
+        <span className="flex items-center justify-center text-base font-medium dark:text-white  text-black gap-2">
           <Image src="/Frame 15.png" alt="bath" width={25} height={25} />
           {bathrooms} حمام
         </span>
-        <span className="flex items-center justify-center text-base font-medium text-black gap-2">
+        <span className="flex items-center justify-center text-base font-medium dark:text-white  text-black gap-2">
           <Image src="/Frame 16.png" alt="peopele" width={25} height={25} />
           {guests} نفر
         </span>

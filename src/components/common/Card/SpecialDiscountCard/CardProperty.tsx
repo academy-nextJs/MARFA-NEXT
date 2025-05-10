@@ -16,7 +16,7 @@ interface PropertyCardProps {
 
 export const PropertyCard: React.FC<PropertyCardProps> = (props) => {
   return (
-    <div className=" h-[266px] w-[287px] max-w-xs rounded-2xl">
+    <div className=" h-[266px]  w-[287px] max-w-xs rounded-2xl">
       <ImageSlider images={props.images} rating={4.5} discountPercent={15} />
       <PropertyInfo
         title={props.title}

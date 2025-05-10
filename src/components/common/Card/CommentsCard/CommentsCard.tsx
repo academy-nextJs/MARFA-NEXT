@@ -5,7 +5,7 @@ import { Card, CardBody } from "@heroui/react";
 import ClientComponents from "./ClientComponents";
 
 export default function CommentsCard({ isActive = false, isHidden = false }) {
-  const bgColor = isActive ? "bg-[#7575FE]" : "bg-[#F9F9F9] dark:bg-darkMode";
+  const bgColor = isActive ? "bg-[#7575FE]" : "bg-[#F9F9F9]  dark:bg-gray-900 dark:text-white";
   const txtColor = isActive ? "white" : "";
   return (
     <Card

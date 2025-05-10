@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function BrilliantHistory() {
   return (
-    <section className="relative w-full flex flex-col md:flex-row items-center justify-around  md:px-16 overflow-hidden">
+    <section className="relative  w-full flex flex-col md:flex-row items-center justify-around  md:px-16 overflow-hidden">
 
       {/************************/}
       <motion.div
@@ -18,15 +18,15 @@ export default function BrilliantHistory() {
       >
         <div
           className={cn(
-            "absolute rounded-full blur-3xl bg-[#b8b8ff] opacity-50",
+            "absolute rounded-full blur-3xl  bg-[#b8b8ff]  opacity-50",
             "w-36 h-36 top-0 left-0 md:hidden"
           )}
         />
         <h4 className="text-sm text-[#7575fe] mb-2 border-2 border-[#7575fe] rounded-2xl w-[4.5rem] p-1 text-center">آلفا درخشان</h4>
-        <h2 className="text-2xl font-bold text-[#444] mb-4">
+        <h2 className="text-2xl font-bold dark:text-white  text-[#444] mb-4">
           <span className="text-indigo-500 font-extrabold text-3xl">10+</span> سال سابقه درخشان
         </h2>
-        <p className="text-gray-600 leading-loose">
+        <p className="text-gray-600 dark:text-white leading-loose">
           لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
           گرافیک است...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
           گرافیک است...لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان

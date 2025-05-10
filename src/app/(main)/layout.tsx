@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../../components/HomeContainer/HeaderComponent/Header";
-
+import { ThemeProvider } from 'next-themes';
 import FooterContainer from "../../components/HomeContainer/FooterComponent/FooterContainer";
-import { HeroUIProvider } from "@heroui/react";
+// import { HeroUIProvider } from "@heroui/react";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -27,17 +27,20 @@ export default function RootLayout({
 }>){
   return (
     <html lang="en" dir="RTL">
-      <body className="bg-white mx-auto px-4 py-4 max-w-screen-2xl overflow-x-hidden">
+      <body className="bg-white mx-auto  dark:bg-gray-900  dark:text-white px-4 py-4 max-w-screen-2xl overflow-x-hidden">
         {/* <HeroUIProvider> */}
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <header className="flex justify-between items-center w-full overflow-hidden">
             <Header />
           </header>
           {children} 
-          <footer className="flex flex-col gap-12 bg-[#F9F9F9] px-7 py-8 rounded-3xl w-full">
+          <footer className="flex flex-col gap-12 bg-[#F9F9F9]  dark:bg-gray-900  dark:text-white px-7 py-8 rounded-3xl w-full">
             <FooterContainer />
           </footer>
           <div id="modal-root"></div>
         {/* </HeroUIProvider> */}
+        </ThemeProvider>
+
       </body>
     </html>
   );

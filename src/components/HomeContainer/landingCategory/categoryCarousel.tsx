@@ -20,7 +20,8 @@ export default function CategoryCarousel({ data }: { data: Category[] }) {
   return (
     <div className="flex flex-col gap-6 w-4/5">
       <SectionTop
-        mainText={['\nهر ملکی بخوای\nاینجا پیدا میشه!']} 
+        mainText={['\nهر ملکی بخوای\nاینجا پیدا میشه!'] } 
+      
         subText={[
           'با کلیک به روی هر دسته بندی می توانید تمام آگهی \nمربوط آن را مشاهده کنید و به ملک مورد علاقه خود برسید',
         ]}

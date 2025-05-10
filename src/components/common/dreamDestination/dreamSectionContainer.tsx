@@ -6,7 +6,7 @@ import DreamCarousel from './dreamCarousel';
 
 export default function DreamSection() {
   return (
-    <div className="relative bg-[#F9F9F9] dark:bg-darkMode p-14 rounded-3xl">
+    <div className="relative bg-[#F9F9F9]   dark:bg-gray-900 dark:text-white p-14 rounded-3xl">
       <div
         className="top-16 -left-0 absolute overflow-hidden"
         // animate={{
