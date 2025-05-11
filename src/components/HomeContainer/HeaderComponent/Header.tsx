@@ -82,6 +82,8 @@ const Header = () => {
 
   return (
     <>
+     <header className="flex justify-between items-center w-full overflow-hidden">
+
       <div className="lg:hidden ">
         <HambergerMenu/>
       </div>
@@ -122,6 +124,8 @@ const Header = () => {
       </aside>
       
       <DarkSwitcher/>
+    </header>
+
     </>
   );
 };

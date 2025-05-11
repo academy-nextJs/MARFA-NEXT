@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../../components/HomeContainer/HeaderComponent/Header";
-import { ThemeProvider } from 'next-themes';
+import { ThemeProvider } from "next-themes";
 import FooterContainer from "../../components/HomeContainer/FooterComponent/FooterContainer";
-// import { HeroUIProvider } from "@heroui/react";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 export const metadata: Metadata = {
   title: "MARFA-NEXT",
@@ -24,23 +13,18 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>){
+}>) {
   return (
     <html lang="en" dir="RTL">
-      <body className="bg-white mx-auto  dark:bg-gray-900  dark:text-white px-4 py-4 max-w-screen-2xl overflow-x-hidden">
+      <body className="bg-white mx-auto  dark:bg-gray-900  dark:text-white px-4 py-4 max-w-[1920px] overflow-x-hidden">
         {/* <HeroUIProvider> */}
         <ThemeProvider attribute="class" defaultTheme="dark">
-          <header className="flex justify-between items-center w-full overflow-hidden">
-            <Header />
-          </header>
-          {children} 
-          <footer className="flex flex-col gap-12 bg-[#F9F9F9]  dark:bg-gray-900  dark:text-white px-7 py-8 rounded-3xl w-full">
-            <FooterContainer />
-          </footer>
+          <Header />
+          {children}
+          <FooterContainer />
           <div id="modal-root"></div>
-        {/* </HeroUIProvider> */}
+          {/* </HeroUIProvider> */}
         </ThemeProvider>
-
       </body>
     </html>
   );

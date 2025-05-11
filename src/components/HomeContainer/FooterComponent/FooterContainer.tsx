@@ -9,6 +9,8 @@ import Footer from "./Footer";
 export default function FooterContainer() {
   return (
     <>
+   <footer className="flex flex-col gap-12 bg-[#F9F9F9]  dark:bg-gray-900  dark:text-white px-7 py-8 rounded-3xl w-full">
+
       <Image src={LogoFooter.src} alt="Logo" width={96} height={96} />
       <Footer />
       <div className="flex gap-3">
@@ -22,6 +24,8 @@ export default function FooterContainer() {
           <Image src={Foot3Image.src} alt="1" width={48} height={48} />
         </div>
       </div>
+  </footer>
+
     </>
   );
 }
