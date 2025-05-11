@@ -6,6 +6,8 @@ import { useState } from "react";
 
 type TProps = {
   children: React.ReactNode;
+  buttons: string[];
+  className?: string;
 };
 
 export function ButtonCourses({ children }: TProps) {
@@ -54,8 +56,8 @@ export function ButtonCourses({ children }: TProps) {
   );
 }
 
-export function ButtonSelected({ children }: TProps) {
-  const [select, setSelect] = useState(true);
+export function ButtonHomeHeder({ children }: TProps) {
+  const [select, setSelect] = useState(false);
 
   return (
     <div className="flex gap-4 items-center ">
@@ -64,12 +66,19 @@ export function ButtonSelected({ children }: TProps) {
         radius="full"
         className="bg-gray-200  dark:bg-zinc-800 dark:text-white rounded-full px-5 py-3 flex-row flex"
       >
-        {children}
         {select ? <span className="w-2 h-2 bg-black rounded-full" /> : ""}
+        {children}
       </Button>
     </div>
   );
 }
+
+
+
+
+
+// -------------------------------------------------------------Button Back------------------------------
+
 export function ButtonBack({ children }: TProps) {
   const [select, setSelect] = useState(true);
 

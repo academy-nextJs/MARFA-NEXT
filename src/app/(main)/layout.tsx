@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../../components/HomeContainer/HeaderComponent/Header";
+import Header from "../../components/HomeContainer/HeaderComponent-01/Header";
 import { ThemeProvider } from "next-themes";
-import FooterContainer from "../../components/HomeContainer/FooterComponent/FooterContainer";
+import FooterContainer from "../../components/HomeContainer/FooterComponent-09/FooterContainer";
 
 export const metadata: Metadata = {
   title: "MARFA-NEXT",
