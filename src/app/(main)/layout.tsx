@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../../components/HomeContainer/HeaderComponent-01/Header";
 import { ThemeProvider } from "next-themes";
 import FooterContainer from "../../components/HomeContainer/FooterComponent-09/FooterContainer";
+import ProviderNextUI from "../RootLayout";
 
 export const metadata: Metadata = {
   title: "MARFA-NEXT",
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en" dir="RTL">
       <body className="bg-white mx-auto  dark:bg-gray-900  dark:text-white px-4 py-4 max-w-[1920px] overflow-x-hidden">
         {/* <HeroUIProvider> */}
+        <ProviderNextUI>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Header />
           {children}
@@ -25,6 +27,7 @@ export default function RootLayout({
           <div id="modal-root"></div>
           {/* </HeroUIProvider> */}
         </ThemeProvider>
+        </ProviderNextUI>
       </body>
     </html>
   );
