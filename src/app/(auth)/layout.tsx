@@ -17,15 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="RTL">
-      <body className="bg-white mx-auto  dark:bg-gray-900  px-4 py-4 max-w-screen-2xl overflow-x-hidden">
+      <body className="p-4  dark:bg-gray-800 h-screen max-w-[1920px] overflow-x-hidden">
         <HeroUIProvider>
           <ThemeProvider attribute="class" defaultTheme="dark">
-            <DarkSwitcher />
-            <div className="flex md:flex-row flex-col justify-center items-center border-2 shadow-lg md:py-2 md:mt-10 gap-8 overflow-hidden">
+             <DarkSwitcher />
+            <div className="flex w-full md:flex-row flex-col  justify-between items-center gap-8 overflow-hidden">
               {children}
-              <div className="hidden md:flex justify-center items-center md:p-2">
-                <SliderRegister />
-              </div>
+             <SliderRegister />
             </div>
           </ThemeProvider>
         </HeroUIProvider>

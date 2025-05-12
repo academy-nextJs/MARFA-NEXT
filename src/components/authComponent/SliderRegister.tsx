@@ -35,7 +35,7 @@ const SliderRegister = ({ isActive }: TPropsClient) => {
   const prevSlide = () => setIndex((index - 1 + slides.length) % slides.length);
 
   return (
-    <div className="relative w-[704px] h-[720px] rounded-[32px] overflow-hidden">
+    <div className="relative w-[50%]  h-[780px]  rounded-[32px] overflow-hidden">
       <Image
         src={slides[index].src}
         alt={`Slide ${index}`}

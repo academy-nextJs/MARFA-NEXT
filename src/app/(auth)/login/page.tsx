@@ -1,13 +1,14 @@
+// import LoginPage from '@/components/authComponent/LoginPage'
 import LoginPage from '@/components/authComponent/LoginPage'
 import React from 'react'
 
-const login = () => {
+const Login = () => {
   return (
-    <div className="my-14 flex items-center justify-center">
+    <div className="my-14 flex mx-auto items-center justify-center">
 
-      <LoginPage/>
+      <LoginPage/> 
     </div>
   )
 }
 
-export default login
+export default Login

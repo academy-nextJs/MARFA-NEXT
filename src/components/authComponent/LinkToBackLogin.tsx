@@ -5,12 +5,12 @@ import React from "react";
 // import { ButtonBack } from "../common/Button/button";
 import { Button } from "@heroui/react";
 
-const LinkToHome = () => {
+const LinkToBack = () => {
   return (
-    <Link href="/">
-      <Button>صفحه اصلی</Button>
+    <Link href="/register">
+      <Button>بازگشت  </Button>
     </Link>
   );
 };
 
-export default LinkToHome;
+export default LinkToBack;

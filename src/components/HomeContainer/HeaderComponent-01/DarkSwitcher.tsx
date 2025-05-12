@@ -9,7 +9,7 @@ export default function DarkSwitcher() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flez items-center gap-2">
       <button
         className="p-2 rounded-full transition-colors duration-200 bg-gray-200 dark:bg-gray-700"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
