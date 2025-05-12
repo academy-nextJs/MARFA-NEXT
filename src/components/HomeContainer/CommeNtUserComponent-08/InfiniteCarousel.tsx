@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 import { Button } from "@heroui/react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
-import CommentsCard from "./Card/CommentsCard/CommentsCard";
+import CommentsCard from "../../common/Card/CommentsCard/CommentsCard";
 const testimonials = [
   {
     name: "پارسا اقایی ",
@@ -47,7 +47,7 @@ export default function InfiniteCarousel() {
   }, []);
 
   return (
-    <div className="relative mt-5 w-full">
+    <div className="relative mt-5  w-[full] ">
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         onSlideChange={(swiper) => {
@@ -110,7 +110,6 @@ export default function InfiniteCarousel() {
               //  className={styles.slide}
             >
               <CommentsCard
-              
                 name={testimonial.name}
                 date={testimonial.date}
                 isActive={index === activeIndex}

@@ -4,7 +4,7 @@ import SpecialDiscountCard from "./SpecialDiscountCard";
 
 const OffBuySellComponent = ({ offer }) => {
   return (
-    <div className="mr-14 w-[97%]">
+    <div className="mr-14  ml-14 w-[97mr-14 %]">
       <LandingBuySellSection
         title="تخفیفات "
         text1="  تخفیفات ویژه"

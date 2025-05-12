@@ -22,7 +22,7 @@ export default function BrilliantHistory() {
             "w-36 h-36 top-0 left-0 md:hidden"
           )}
         />
-        <h4 className="text-sm  mr-14 text-[#7575fe] mb-2 border-2 border-[#7575fe] rounded-2xl w-[4.5rem] p-1 text-center">آلفا درخشان</h4>
+        <h4 className="text-sm h-9 w-32 mr-14 text-[#7575fe] mb-2 border-2 border-[#7575fe] rounded-3xl  p-2 text-center">آلفا درخشان</h4>
         <h2 className="text-2xl  mr-14 font-bold dark:text-white  text-[#444] mb-4">
           <span className="text-indigo-500 font-extrabold  text-3xl">10+</span> سال سابقه درخشان
         </h2>

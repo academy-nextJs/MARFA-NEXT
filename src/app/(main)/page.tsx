@@ -1,4 +1,4 @@
-import InfiniteCarousel from "@/components/common/InfiniteCarousel";
+import InfiniteCarousel from "@/components/HomeContainer/CommeNtUserComponent-08/InfiniteCarousel";
 import { SectionTop } from "@/components/common/sectionTop";
 import BrilliantHistory from "@/components/HomeContainer/BrilliantHistory-06/BrilliantHistory";
 import CategoryCarousel from "@/components/HomeContainer/landingCategory-03/categoryCarousel";
@@ -7,6 +7,7 @@ import PlaceDreamsComponent from "@/components/HomeContainer/PlaceDreams-05/Plac
 import OffBuySellComponent from "@/components/HomeContainer/LandingBuySellSection-04/OffBuySellComponent";
 import BuySellComponent from "@/components/HomeContainer/BuySellHote-07/BuySellHote";
 import HeroSection from "@/components/HomeContainer/HeroSectionComponent-02/HeroSection";
+import CommeNtUserComponent from "@/components/HomeContainer/CommeNtUserComponent-08/CommeNtUserComponent";
 
 export default async function Home() {
   const { data } = await api.get("/categories");
@@ -22,17 +23,16 @@ export default async function Home() {
   return (
     <>
       <main>
-        <HeroSection/>
+        <HeroSection />
         <CategoryCarousel data={data} />
 
         <OffBuySellComponent offer={offer} />
 
         <PlaceDreamsComponent />
         <BrilliantHistory />
-        <BuySellComponent  offer={offer}/>
+        <BuySellComponent offer={offer} />
 
-
-        <section className="my-10">
+        {/* <section className="my-10">
           <SectionTop
             mainText={["نظرات کاربران درباره آلفا"]}
             subText={[
@@ -40,7 +40,8 @@ export default async function Home() {
             ]}
           />
           <InfiniteCarousel />
-        </section>
+        </section> */}
+        <CommeNtUserComponent />
       </main>
     </>
   );

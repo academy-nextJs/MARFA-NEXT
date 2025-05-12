@@ -17,11 +17,11 @@ export default async function LandingBuySellSection({ title, text1, text2 }:land
       <div className="flex flex-col gap-4">
         <MyChip
           size="lg"
-          className="bg-transparent px-3 py-6 border border-[#7575FE] !font-black text-[#7575FE]"
+          className="bg-transparent px-3 py-6 border border-[#7575FE] h-9 !font-black text-[#7575FE]"
         >
           {title}
         </MyChip>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center ml-14 gap-2">
           <h1 className="font-bold text-3xl">
             {text1}
             <br />

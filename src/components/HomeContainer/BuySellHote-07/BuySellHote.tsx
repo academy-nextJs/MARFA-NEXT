@@ -4,7 +4,7 @@ import SpecialDiscountCard2 from "@/components/HomeContainer/BuySellHote-07/Spec
 
 const BuySellComponent = ({ offer }) => {
   return (
-    <>
+    <div className="mr-14 ml-14 w-[97%]">
       <LandingBuySellSection
         title="خرید و فروش "
         text1="  خرید و فروش های داغ "
@@ -15,7 +15,7 @@ const BuySellComponent = ({ offer }) => {
           <SpecialDiscountCard2  key={offer.id ?? index} data={offer} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

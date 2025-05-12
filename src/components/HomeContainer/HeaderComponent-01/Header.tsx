@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex   mx-auto w-[97%] justify-between items-center h-[48px] mt-5 overflow-hidden">
+      <header className="flex  mx-auto w-[95%] justify-between items-center h-[48px] mt-5 ml-14 mr-14 overflow-hidden">
         <div className="lg:hidden ">
           <HambergerMenu />
         </div>

@@ -28,7 +28,7 @@ export function SectionTop({
   };
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 ml-14 mr-14 w-[97%]">
       {chipText && (
         <MyChip className="bg-transparent   border-[#6a6af8] border-1 text-[#7979fb] text-xl">
           {chipText}

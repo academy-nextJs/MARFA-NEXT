@@ -23,8 +23,6 @@ export default function RootLayout({
             <DarkSwitcher />
             <div className="flex md:flex-row flex-col justify-center items-center border-2 shadow-lg md:py-2 md:mt-10 gap-8 overflow-hidden">
               {children}
-              {/* Left Section (Slider) — فقط توی دسکتاپ */}
-
               <div className="hidden md:flex justify-center items-center md:p-2">
                 <SliderRegister />
               </div>
