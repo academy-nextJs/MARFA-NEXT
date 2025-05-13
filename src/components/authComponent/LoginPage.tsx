@@ -7,6 +7,7 @@ import LineOrLogin from "./LineOrLogin";
 import EmailInpoutLogin from "./EmailInpoutLogin";
 import UserAccount from "./UserAccount";
 import LinkToHome from "./LinkToHome";
+import { handleAdd } from "@/function/handleLogin";
 
 const LoginPage = () => {
   return (
@@ -18,31 +19,38 @@ const LoginPage = () => {
               titleAuth="ثبت‌ نام در آلفا"
               textAuth="
               برای ثبت‌نام در آلفا می‌توانید با اکانت گوگل یا اپل خود وارد شوید
-              یا ایمیل خود را وارد کرده و کد تأیید دریافت کنید." BtnLink={<LinkToHome/>}
+              یا ایمیل خود را وارد کرده و کد تأیید دریافت کنید."
+              BtnLink={<LinkToHome />}
             />
             <BtnLoginRegister />
             <LineOrLogin />
-            <EmailInpoutLogin
-              textemail="ایمیل خود را وارد کنید"
-              Email="ایمیل "
-            />
-            <div className="relative ">
-              <span className="absolute bottom-14 w-32 h-10 left-2 z-50 text-[#7575FE] font-bold">
-                 فراموشی رمز عبور{" "}
-              </span>
+            <form action={handleAdd}>
               <EmailInpoutLogin
-                textemail="رمز عبور خود را وارد کنید"
-                Email="رمز عبور "
+                textemail="ایمیل خود را وارد کنید"
+                Email="ایمیل "
+                name="email"
+                type='email'
               />
-            </div>
+              <div className="relative ">
+                <span className="absolute bottom-14 w-32 h-10 left-2 z-50 text-[#7575FE] font-bold">
+                  فراموشی رمز عبور{" "}
+                </span>
+                <EmailInpoutLogin
+                  textemail="رمز عبور خود را وارد کنید"
+                  Email="رمز عبور "
+                  name="password"
+                  type='password'
+                />
+              </div>
 
-            <Button className="bg-[#7575FE] text-white text-base">
-              ورود به حساب
-            </Button>
+              <Button className="bg-[#7575FE] text-white text-base" type='submit'>
+                ورود به حساب
+              </Button>
+            </form>
             <UserAccount
               account="حساب کاربری ندارید؟"
               userid=" ثبت نام در آلفا "
-              SrcLink='/registerStep2'
+              SrcLink="/registerStep2"
             />
           </CardBody>
         </Card>

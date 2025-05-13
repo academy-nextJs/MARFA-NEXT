@@ -18,8 +18,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="RTL">
-      <body className="p-4  dark:bg-gray-800 h-screen max-w-[1920px] overflow-x-hidden">
+    <html lang="fa" dir="RTL" className="font-yekan">
+      <body className="p-4  dark:bg-gray-800 h-screen mx-auto  min-w-screen max-w-[1920px] overflow-x-hidden">
         <ProviderNextUI>
         {/* <HeroUIProvider> */}
           <ThemeProvider attribute="class" defaultTheme="dark">
