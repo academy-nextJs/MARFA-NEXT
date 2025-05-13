@@ -1,5 +1,7 @@
 "use client";
 import { HeroUIProvider } from "@heroui/react";
+import './(main)/globals.css';
+
 // import { NextUIProvider } from "@nextui-org/react";
 
 export default function ProviderNextUI({

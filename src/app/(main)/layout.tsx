@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="RTL">
+    <html lang="fa" dir="RTL" className="font-yekan">
       <body className="bg-white mx-auto  dark:bg-gray-900  dark:text-white px-4 py-4 max-w-[1920px] overflow-x-hidden">
         {/* <HeroUIProvider> */}
         <ProviderNextUI>

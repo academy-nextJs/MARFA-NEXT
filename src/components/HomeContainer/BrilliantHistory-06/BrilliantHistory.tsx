@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 export default function BrilliantHistory() {
   return (
-    <section className="relative  my-20  w-[100%] flex flex-col md:flex-row items-center justify-between  overflow-hidden">
+    <section className="relative  my-20  w-[100%] flex flex-col md:flex-row items-center justify-between">
 
       {/************************/}
       <motion.div
@@ -14,7 +14,7 @@ export default function BrilliantHistory() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="relative   bg-slate-700z-20 text-right max-w-2xl md:pl-10"
+        className="relative  bg-slate-700z-20 text-right max-w-2xl md:pl-10"
       >
         <div
           className={cn(
