@@ -104,6 +104,7 @@ export default function InfiniteCarousel() {
             spaceBetween: 20, // reduced from 20
           },
           768: {
+            
             slidesPerView: 3,
             spaceBetween: 30, // reduced from 30
           },

@@ -22,7 +22,7 @@ export const PropertyInfo2: React.FC<PropertyInfoProps> = ({
   return (
     <div className="p-4 space-y-2 text-sm dark:text-white  text-gray-800">
       <h2 className="font-bold text-lg">{title}</h2>
-      <div className="flex gap-2 text-base font-medium  whitespace-nowrap dark:text-white  text-[#000000]">
+      <div className="flex gap-2 text-base font-medium  whitespace-nowrap dark:text-white   text-[#000000]">
         <Image src="/Frame 12.png" alt="frameLocation" width={25} height={25} />
         {location}
       </div>

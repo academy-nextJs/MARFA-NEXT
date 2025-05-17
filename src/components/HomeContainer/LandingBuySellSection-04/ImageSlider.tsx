@@ -1,8 +1,12 @@
+"use client";
+
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
+import { Pagination, Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
+import "swiper/css/pagination";
 import Image from "next/image";
+import { useRef } from "react";
+import SliderButtonsCard from "@/components/common/Button/SliderButtonsCard";
 
 interface ImageSliderProps {
   images: string[];
@@ -15,10 +19,20 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
   rating,
   discountPercent,
 }) => {
+  const swiperRef = useRef<any>(null);
+
+  const handlePrev = () => {
+    swiperRef.current?.slidePrev();
+  };
+
+  const handleNext = () => {
+    swiperRef.current?.slideNext();
+  };
+
   return (
-    <div className="relative w-full h-[266px] rounded-xl overflow-hidden">
+    <div className="relative w-full h-[300px] rounded-xl overflow-hidden">
       {(rating || discountPercent) && (
-        <div className="absolute top-2 left-1 flex gap-2 z-10">
+        <div className="absolute top-2 left-1 flex gap-2 z-10 rounded-3xl">
           {discountPercent && (
             <span className="bg-red-500 text-white text-xs px-2 py-1 flex items-center justify-center gap-2 rounded-full shadow-md">
               %{discountPercent}-
@@ -33,7 +47,24 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
         </div>
       )}
 
-      <Swiper modules={[Navigation]} navigation loop className="h-full">
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        loop
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        navigation={{
+          prevEl: ".swiper-button-prev-custom",
+          nextEl: ".swiper-button-next-custom",
+        }}
+        className="h-full"
+      >
         {images.map((src, i) => (
           <SwiperSlide key={i}>
             <Image
@@ -41,11 +72,15 @@ export const ImageSlider: React.FC<ImageSliderProps> = ({
               alt={`slide-${i}`}
               width={800}
               height={500}
-              className="w-full h-auto object-cover"
+              className="w-full rounded-3xl h-full object-cover"
             />
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* دکمه‌های ناوبری سفارشی */}
+  
+      <SliderButtonsCard onPrev={handlePrev} onNext={handleNext} />
     </div>
   );
 };

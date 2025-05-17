@@ -2,9 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { ButtonEmpty } from "../common/Button/button";
 import ClientComponents from "../common/Card/CommentsCard/ClientComponents";
 import { TPropsClient } from "@/types/types";
+import SliderButtons from "../common/Button/SliderButtons";
 
 const slides = [
   {
@@ -104,15 +104,18 @@ const SliderRegister = ({ isActive }: TPropsClient) => {
         </h2>
       </div>
 
-      <div className="absolute bottom-6 left-6 flex items-center gap-2">
+        {/* btnLeftRight */}
+
+      {/* <div className="absolute bottom-6 left-6 flex items-center gap-2">
         <ButtonEmpty onClick={prevSlide} className="bg-white/20 w-8 h-8 rounded-full">❮</ButtonEmpty>
         <ButtonEmpty onClick={nextSlide} className="bg-white/20 w-8 h-8 rounded-full">❯</ButtonEmpty>
-      </div>
+      </div> */}
+     <SliderButtons onPrev={prevSlide} onNext={nextSlide} />
 
       <div className="absolute bottom-6 right-6 text-white">
         <ClientComponents name="پارسا آقایی" date="12 مرداد 1403" isActive={isActive} />
       </div>
-
+    {/* timerRing */}
       <div className="absolute bottom-5 left-32 flex gap-4 z-10">
         <svg width="45" height="45" className="-rotate-90 -scale-y-100">
           <circle stroke="#6c63ff" fill="transparent" strokeWidth="3" r={radius} cx="22" cy="22" />
@@ -133,5 +136,4 @@ const SliderRegister = ({ isActive }: TPropsClient) => {
 };
 
 export default SliderRegister;
-
 

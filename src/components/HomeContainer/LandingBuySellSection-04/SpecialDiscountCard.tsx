@@ -2,12 +2,10 @@
 
 import { CardProperty } from "./CardProperty";
 
-
 const dummyImages = [
-  "/cardSlider.png",
-  "/cardSlider.png",
-  "/cardSlider.png",
-
+  "/cardSlider2.png",
+  "/hero.png",
+  "/cardSlider2.png",
 ];
 
 export default function SpecialDiscountCard({data}) {

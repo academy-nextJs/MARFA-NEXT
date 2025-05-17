@@ -10,7 +10,7 @@ const BuySellComponent = ({ offer }) => {
         text1="  خرید و فروش های داغ "
         text2=" این هفته   "
       />
-      <div className="flex justify-center mt-16 items-center gap-4">
+      <div className="flex justify-center mt-16 items-center gap-9">
         {offer?.map((offer: any) => (
           <SpecialDiscountCard2  key={offer.id ?? index} data={offer} />
         ))}
