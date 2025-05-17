@@ -37,7 +37,7 @@ export default function Footer() {
       </div>
       <div className="flex flex-col gap-3 text-[#AAAAAA] md:w-[30%] xl:w-[23%] font-light">
         <p className="text-2xl text-black  dark:text-white font-medium">راه ارتباطی آلفا </p>
-        <span className="hover:text-black cursor-pointer">
+        <span className="hover:text-black cursor-pointer text-right">
          09119134451 - 0911***5006  -  09199270177
         </span>
         <span className="hover:text-black cursor-pointer"> MARFA@gmail.com</span>

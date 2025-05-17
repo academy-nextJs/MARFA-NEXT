@@ -10,6 +10,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./src/app/main/global.css"
   ],
+  safelist: [
+    'scroll-thin-blue', // کلاس سفارشی اسکرول‌بار
+  ],
   theme: {
     extend: {
       fontFamily: {
