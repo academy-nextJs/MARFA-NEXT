@@ -1,11 +1,17 @@
 import { Button, Input } from "@heroui/react";
 import React from "react";
 
-const EmailInpoutLogin = ({Email,textemail}) => {
+type inputPropsType = {
+  Email: string;
+  textemail: string;
+  name: string;
+  type:string
+};
+const EmailInpoutLogin = ({Email,textemail, name , type}: inputPropsType) => {
   return (
     <div className="flex flex-col my-2 gap-4">
       <span className="text-right">{Email}</span>
-      <Input type="email" placeholder={textemail} />
+      <Input type={type} placeholder={textemail} name={name} />
     </div>
   );
 };

@@ -42,7 +42,7 @@ const Header = () => {
 
           <HeaderOptionSelect />
           <HeaderFastSelect />
-          <Link href="/register">
+          <Link href="/login">
             <Button className="bg-[#7575FE] h-12 text-white">
               ثبت نام / ورود
             </Button>
