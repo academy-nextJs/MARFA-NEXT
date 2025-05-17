@@ -1,3 +1,23 @@
+@import "leaflet/dist/leaflet.css";
+
+.scroll-thin-blue {
+  scrollbar-width: thin; /* برای فایرفاکس */
+  scrollbar-color: #7575FE transparent; /* برای فایرفاکس */
+}
+
+.scroll-thin-blue::-webkit-scrollbar {
+  width: 6px; /* برای کروم */
+}
+
+.scroll-thin-blue::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-thin-blue::-webkit-scrollbar-thumb {
+  background-color: #7575FE;
+  border-radius: 6px;
+}
+
 @font-face {
   font-family: 'Yekan';
   src: url('/fonts/yekan.ttf') format('truetype');

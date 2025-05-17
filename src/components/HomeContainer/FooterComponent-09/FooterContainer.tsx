@@ -9,7 +9,7 @@ import Footer from "./Footer";
 export default function FooterContainer() {
   return (
     <>
-   <footer className="flex flex-col gap-12 bg-[#F9F9F9]  dark:bg-gray-900  dark:text-white px-7 py-8 rounded-3xl w-full">
+   <footer className="flex flex-col gap-12 bg-[#F9F9F9]  dark:bg-gray-900 font-yekan text-justify  dark:text-white px-7 py-8 rounded-3xl w-full">
 
       <Image src={LogoFooter.src} alt="Logo" width={96} height={96} />
       <Footer />
