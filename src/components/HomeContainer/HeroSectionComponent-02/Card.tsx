@@ -6,7 +6,7 @@ import { Avatar, AvatarGroup } from "@heroui/react";
 
 const StatCard = () => {
   return (
-    <div className="flex items-end flex-row  gap-2 sm:gap-3 justify-around w-full">
+    <div className="flex items-end flex-row  mt-10 p-14  gap-2 sm:gap-3 justify-around w-full">
       <div className="bg-[#F9F9F9] shadow-lg mt-4 sm:mt-16 p-2 sm:p-3 rounded-2xl sm:rounded-3xl w-[30%] sm:w-[158px] h-[140px] sm:h-[165px] md:h-[185px] text-right">
         <h2 className="m-0 font-bold text-black text-xs sm:text-sm text-right">
           بیش از

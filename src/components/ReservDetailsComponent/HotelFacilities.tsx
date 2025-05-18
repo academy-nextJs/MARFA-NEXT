@@ -53,10 +53,10 @@ import { FiWifi, FiCoffee, FiTv, FiMapPin } from "react-icons/fi";
 import ChipText from "../common/chipLabel/ChipText";
 
 const facilities = [
-  { id: 1, name: "اینترنت رایگان", ansver: "دارد", icon: <FiWifi className="text-xl" /> },
-  { id: 2, name: "صبحانه رایگان", ansver: "دارد", icon: <FiCoffee className="text-xl" /> },
-  { id: 3, name: "تلویزیون", ansver: "دارد", icon: <FiTv className="text-xl" /> },
-  { id: 4, name: "دسترسی آسان", ansver: "دارد", icon: <FiMapPin className="text-xl" /> },
+  // { id: 1, name: "اینترنت رایگان", ansver: "دارد", icon: <FiWifi className="text-xl" /> },
+  // { id: 2, name: "صبحانه رایگان", ansver: "دارد", icon: <FiCoffee className="text-xl" /> },
+  // { id: 3, name: "تلویزیون", ansver: "دارد", icon: <FiTv className="text-xl" /> },
+  // { id: 4, name: "دسترسی آسان", ansver: "دارد", icon: <FiMapPin className="text-xl" /> },
   { id: 5, name: "اتاق", ansver: "4 خواب" },
   { id: 6, name: "گرمایش ", ansver: "شوفاژ" },
   { id: 7, name: "سرمایش", ansver: "کولر" },
@@ -77,7 +77,7 @@ const HotelFacilities = () => {
       <ChipText ChipText={"امکانات هتل"} />
       <div className="grid grid-cols-2 gap-4">
         {facilities.map((facility) => (
-          <div key={facility.id} className="flex items-center gap-4 p-2 rounded-lg border border-gray-200">
+          <div key={facility.id} className="flex  gap-4 p-2 pr-3  border-r-1">
             {facility.icon && <div className="text-blue-500">{facility.icon}</div>}
             <div>
               <p className="text-blue-700 font-semibold">{facility.name}</p>

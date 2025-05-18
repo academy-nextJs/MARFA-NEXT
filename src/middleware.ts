@@ -3,33 +3,33 @@ import type { NextRequest } from 'next/server'
 // import { publicRoutes, privateRoutes, authRoutes } from './core/config/routes'
 
 export function middleware(request: NextRequest) {
-  // const token = request.cookies.get('token')?.value
-  // const { pathname } = request.nextUrl
+  const token = request.cookies.get('token')?.value
+  const { pathname } = request.nextUrl
 
-  // if (publicRoutes.includes(pathname)) {
-  //   return NextResponse.next()
-  // }
+  if (publicRoutes.includes(pathname)) {
+    return NextResponse.next()
+  }
 
-  // if (authRoutes.includes(pathname) && token) {
-  //   return NextResponse.redirect(new URL('/dashboard', request.url))
-  // }
+  if (authRoutes.includes(pathname) && token) {
+    return NextResponse.redirect(new URL('/dashboard', request.url))
+  }
 
-  // if (privateRoutes.includes(pathname)) {
-  //   if (!token) {
-  //     const redirectUrl = new URL('/login', request.url)
-  //     return NextResponse.redirect(redirectUrl)
-  //   }
-  //   return NextResponse.next()
-  // }
+  if (privateRoutes.includes(pathname)) {
+    if (!token) {
+      const redirectUrl = new URL('/login', request.url)
+      return NextResponse.redirect(redirectUrl)
+    }
+    return NextResponse.next()
+  }
 
-  // return NextResponse.redirect(new URL('/', request.url))
-  // return NextResponse.redirect(new URL('/register', request.url))
+  return NextResponse.redirect(new URL('/', request.url))
+  return NextResponse.redirect(new URL('/register', request.url))
 
 }
 
 export const config = {
   matcher: [
-    // '/dashboard/:path*',
+    '/dashboard/:path*',
     // '/login',
     // '/completeRegister',
     // '/verifyCode'

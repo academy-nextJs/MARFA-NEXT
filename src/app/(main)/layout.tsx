@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="RTL" className="font-yekan">
-      <body className="bg-white mx-auto  dark:bg-gray-900  dark:text-white px-4 py-4 max-w-[1920px] overflow-x-hidden">
+      <body className="max-w-[1920px] bg-white  mx-auto dark:bg-gray-900 dark:text-white px-4 py-4 overflow-x-hidden">
         <ProviderNextUI>
           <ThemeProvider attribute="class" defaultTheme="dark">
             <Header />

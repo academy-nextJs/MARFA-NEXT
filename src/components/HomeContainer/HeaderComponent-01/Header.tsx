@@ -21,21 +21,23 @@ const Header = () => {
 
   return (
     <>
-      <header className="flex  mx-auto w-[95%] justify-between font-yekan  items-center h-[48px] mt-5 ml-14 mr-14 overflow-hidden">
-        <div className="lg:hidden ">
+      <header className="flex  mx-auto w-1/2 justify-center gap-2 md:w-[95%] md:justify-between font-yekan  items-center h-[48px] mt-5">
+        <div className="lg:hidden">
           <HambergerMenu />
         </div>
 
-        <ButtonHederSelected />
+        <ButtonHederSelected/>
 
         {/* logo alfa */}
-
-        <Image
+       <div className="p-5" >
+        
+       <Image
           src={theme === "dark" ? LogoDark.src : LogoLight.src}
           alt="Logo"
           width={78}
           height={78}
         />
+       </div>
 
         <aside className="hidden lg:flex justify-center items-center gap-4">
           <DarkSwitcher />

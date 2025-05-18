@@ -3,6 +3,7 @@
 import React from "react";
 import { Input, Select, SelectItem } from "@nextui-org/react";
 import { Search } from "lucide-react";
+import SearchInput from "../common/inputs/SearchInput";
 
 export default function RentalFilter() {
   return (
@@ -12,14 +13,7 @@ export default function RentalFilter() {
         <label className="block mb-1 text-sm text-gray-950 font-semibold text-right">
           جستجو
         </label>
-        <Input
-          placeholder=" جستجو کنید ..."
-          startContent={
-            // <Search className="text-default-400 pointer-events-none flex-shrink-0" />
-            <img src='/Frame 81.svg' className="w-10 h-10 relative -right-4"  />
-          }
-          className="w-full"
-        />
+      <SearchInput />
         
       </div>
 

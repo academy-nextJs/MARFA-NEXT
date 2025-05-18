@@ -26,8 +26,9 @@ type showMapProps = {
 };
 export default function ReserveCard({ showMap, setShowMap }: showMapProps) {
   return (
-    <Card className="w-[260px] rounded-xl shadow-md overflow-hidden text-right font-bold font-yekan dark:bg-gray-900 ">
-      <CardHeader className="relative p-0">
+<Card className="w-full max-w-[260px] sm:w-[260px] h-96 rounded-xl shadow-md overflow-hidden text-right font-bold font-yekan dark:bg-gray-900 mx-auto">
+
+<CardHeader className="relative p-0">
         <img
           src="/heropic.jpg"
           alt="house"

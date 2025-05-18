@@ -11,7 +11,7 @@ export default function CategoryCarousel({
   href,
 }: LandingCard2Props) {
   return (
-    <Card isBlurred className="relative border-none rounded-[10%] w-fit" >
+    <Card isBlurred className="relative border-none  rounded-[10%] w-fit" >
       <CardHeader className="top-2 left-2 z-10 absolute flex justify-end w-full">
         <Link href={href}>
           <Button

@@ -1,7 +1,7 @@
 import StatCard from "./Card";
 const LeftHeroSection = () => {
   return (
-    <div className="  h-[35.3125rem] w-full text-black dark:text-white ">
+    <div className="h-[43.3125rem] hidden md:block w-full text-black dark:text-white ">
       <h4 className="md:text-6xl pr-8 pt-6 font-yekan font-black text-4xl">
         خانه ای که میخوای،
         <br />
@@ -14,7 +14,7 @@ const LeftHeroSection = () => {
         مثل آب خوردن فقط در دلتا
       </p>
 
-      <div>
+      <div >
         <StatCard />
       </div>
     </div>

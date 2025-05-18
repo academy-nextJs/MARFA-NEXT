@@ -34,14 +34,14 @@ export function ButtonHomeHeder({
 }
 
 export function ButtonHederSelected() {
-  const [selectedIndex, setSelectedIndex] = useState<number>(-1); // ابتدا هیچ دکمه ای انتخاب نشده است.
+  const [selectedIndex, setSelectedIndex] = useState<number>(-1); 
 
   const handleSelect = (index: number) => {
-    setSelectedIndex(index); // با انتخاب دکمه، ایندکس انتخابی را تغییر می‌دهیم.
+    setSelectedIndex(index); 
   };
 
   return (
-    <div className="flex gap-4 items-center">
+    <div className="md:flex gap-4 hidden items-center">
       <ButtonHomeHeder
         index={0}
         selectedIndex={selectedIndex}
