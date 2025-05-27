@@ -3,7 +3,7 @@ import SearchButton from "./SearchButton";
 
 const RightHeroSection = () => {
   return (
-    <div className="md:w-full  w-[80%] md:h-[43.3125rem] h-[322px]  sm:flex-center rounded-2xl relative">
+    <div className="md:w-[95%]  w-[80%] md:h-[43.3125rem] h-[322px]  sm:flex-center rounded-2xl relative">
       <Image
         src="/hero.png"
         alt="Modern apartment building"

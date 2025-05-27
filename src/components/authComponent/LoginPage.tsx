@@ -50,7 +50,7 @@ const LoginPage = () => {
             <UserAccount
               account="حساب کاربری ندارید؟"
               userid=" ثبت نام در آلفا "
-              SrcLink="/registerStep2"
+              SrcLink="/register"
             />
           </CardBody>
         </Card>

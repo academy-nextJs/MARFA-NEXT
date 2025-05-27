@@ -1,5 +1,5 @@
-import InfiniteCarousel from "@/components/HomeContainer/CommeNtUserComponent-08/InfiniteCarousel";
-import { SectionTop } from "@/components/common/sectionTop";
+// import InfiniteCarousel from "@/components/HomeContainer/CommeNtUserComponent-08/InfiniteCarousel";
+// import { SectionTop } from "@/components/common/sectionTop";
 import BrilliantHistory from "@/components/HomeContainer/BrilliantHistory-06/BrilliantHistory";
 import CategoryCarousel from "@/components/HomeContainer/landingCategory-03/categoryCarousel";
 import api from "@/utils/service/api";
@@ -31,17 +31,8 @@ export default async function Home() {
         <PlaceDreamsComponent />
         <BrilliantHistory />
         <BuySellComponent offer={offer} />
-
-        {/* <section className="my-10">
-          <SectionTop
-            mainText={["نظرات کاربران درباره آلفا"]}
-            subText={[
-              "تیم دلتا با ارائه بهترین نیرو های خدماتی و سرویس های\n املاکی سعی دارد تا بتواند در تمام لحظات کنار شما باشد .",
-            ]}
-          />
-          <InfiniteCarousel />
-        </section> */}
         <CommeNtUserComponent />
+        {/* <DashboardSeller /> */}
       </main>
     </>
   );

@@ -2,6 +2,24 @@ import { InputProps } from '@heroui/react';
 import { ReactNode } from 'react';
 import { ButtonProps } from '@heroui/react';
 
+import { LucideProps } from "lucide-react";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
+
+export interface IModal {
+  onClick?: () => void
+  title?: string
+  buttonTitle?: string
+  buttonIcon?: React.ReactNode,
+  button?: React.ReactNode,
+  handleClick?: string
+}
+export interface Routes {
+    label: string,
+    href: string,
+    icon: ForwardRefExoticComponent<Omit<LucideProps, "ref"> & RefAttributes<SVGSVGElement>>,
+    children?: any[];
+}
+
 export interface LandingCard2Props {
   text: string;
   count?: number;
