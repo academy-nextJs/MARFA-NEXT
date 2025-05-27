@@ -1,4 +1,5 @@
-import { MyChipProps } from "@/src/types/types";
+// import { MyChipProps } from "@/src/types/types";
+import { MyChipProps } from "@/types/types";
 import { Chip } from "@heroui/react";
 
 
