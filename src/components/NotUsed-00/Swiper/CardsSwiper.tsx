@@ -5,15 +5,15 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Image from "next/image";
 import CardCategorySlider from "../../common/Card/CardCategorySlider/CardCategorySlider";
+// import Image from "next/image";
 
 const properties = [
   { id: 1, title: "ملک استخردار", image: "/image/10.png" },
   { id: 2, title: "ویلا جنگلی", image: "/image/10.png" },
   { id: 3, title: "آپارتمان شیک", image: "/image/10.png" },
   { id: 4, title: "ملک استخردار", image: "/image/10.png" },
-  { id: 5, title: "ویلا جنگلی", image: "/image/10.png" },
+  { id: 5, title: "ویلا جنگلی", Image: "/image/10.png" },
   { id: 6, title: "آپارتمان شیک", image: "/image/10.png" },
 ];
 
