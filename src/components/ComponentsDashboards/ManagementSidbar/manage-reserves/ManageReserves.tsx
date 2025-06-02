@@ -206,7 +206,7 @@ export default function HotelReservationList() {
   };
 
   return (
-    <div className="flex flex-col justify-between gap-8 bg-subBg p-4 sm:p-6 lg:p-8 rounded-xl w-full min-h-screen">
+    <div className="flex flex-col justify-between gap-8 bg-[#ffffff] dark:bg-gray-800 p-4 sm:p-6 lg:p-8 rounded-xl w-full min-h-screen">
       <div className="flex flex-col gap-4">
         <h1 className="text-xl font-bold text-right text-foreground">
           لیست رزرو های شما
@@ -256,7 +256,7 @@ export default function HotelReservationList() {
       />
       <div className="overflow-hidden rounded-xl border border-border hidden lg:block">
         <Table className="text-right w-full">
-          <TableHeader className="bg-subBg2 text-foreground">
+          <TableHeader className="bg-gray-200 dark:bg-gray-800 text-foreground">
             <TableRow className="text-right rounded-xl">
               <TableHead className="text-right text-foreground whitespace-nowrap">
                 نام اقامتگاه
@@ -283,7 +283,7 @@ export default function HotelReservationList() {
             {filteredReservations.map((reservation, idx) => (
               <TableRow
                 key={reservation.id}
-                className="hover:bg-subBg2"
+                className="hover:bg-gray-200 dark:bg-gray-800"
               >
                 <TableCell className="py-4">
                   <div className="flex items-center gap-2">
@@ -323,10 +323,10 @@ export default function HotelReservationList() {
                     <div
                       className={`flex absolute left-full ${
                         idx > 2 ? "bottom-full" : "top-2"
-                      } flex-col rounded-xl gap-2 p-2 z-20 bg-subBg shadow-2xl`}
+                      } flex-col rounded-xl gap-2 p-2 z-20 bg-[#ffffff] dark:bg-gray-800 shadow-2xl`}
                     >
                       <div
-                        className="bg-subBg px-4 py-1 flex gap-2 rounded-xl justify-between flex-row-reverse cursor-pointer hover:bg-border"
+                        className="bg-[#ffffff] dark:bg-gray-800 px-4 py-1 flex gap-2 rounded-xl justify-between flex-row-reverse cursor-pointer hover:bg-border"
                         onClick={(e) => {
                           e.stopPropagation();
                           setIsReserveModalOpen(true);
@@ -335,14 +335,14 @@ export default function HotelReservationList() {
                       >
                         جزییات <Info size={16} />
                       </div>
-                      <div className="bg-subBg px-4 py-1 flex gap-2 rounded-xl justify-between flex-row-reverse cursor-pointer hover:bg-border">
+                      <div className="bg-[#ffffff] dark:bg-gray-800 px-4 py-1 flex gap-2 rounded-xl justify-between flex-row-reverse cursor-pointer hover:bg-border">
                         ویرایش <Edit size={16} />
                       </div>
                       <CommonModal
                         handleClick="حذف"
                         title=" آیا از حذف ملک مطمئن هستید؟ "
                         button={
-                          <div className="bg-subBg px-4 py-1 flex gap-2 rounded-xl justify-between flex-row-reverse cursor-pointer hover:bg-border">
+                          <div className="bg-[#ffffff] dark:bg-gray-800 px-4 py-1 flex gap-2 rounded-xl justify-between flex-row-reverse cursor-pointer hover:bg-border">
                             حذف <Delete size={16} />
                           </div>
                         }
@@ -360,7 +360,7 @@ export default function HotelReservationList() {
         {filteredReservations.map((reservation, idx) => (
           <div
             key={reservation.id}
-            className="flex flex-col bg-subBg border border-border rounded-xl overflow-hidden shadow-sm"
+            className="flex flex-col bg-[#ffffff] dark:bg-gray-800 border border-border rounded-xl overflow-hidden shadow-sm"
           >
             <div className="flex items-center justify-between p-4 border-b border-border">
               <div
@@ -377,7 +377,7 @@ export default function HotelReservationList() {
                 </button>
 
                 {openModalIndex === idx && (
-                  <div className="absolute right-8 top-0 mt-1 z-20 bg-subBg rounded-lg shadow-lg border border-border w-40">
+                  <div className="absolute right-8 top-0 mt-1 z-20 bg-[#ffffff] dark:bg-gray-800 rounded-lg shadow-lg border border-border w-40">
                     <div className="flex flex-col p-1">
                       <button className="flex items-center justify-between gap-2 px-3 py-2 hover:bg-border rounded-md">
                         <span
@@ -444,7 +444,7 @@ export default function HotelReservationList() {
         {filteredReservations.map((reservation) => (
           <div
             key={reservation.id}
-            className="w-full rounded-xl p-4 border border-border bg-subBg shadow-md relative"
+            className="w-full rounded-xl p-4 border border-border bg-[#ffffff] dark:bg-gray-800 shadow-md relative"
           >
             <div className="absolute top-4 left-4 z-20">
               <button
@@ -459,7 +459,7 @@ export default function HotelReservationList() {
               </button>
 
               {openModalIndex === reservation.id && (
-                <div className="absolute left-0 mt-2 w-36 bg-subBg rounded-lg shadow-xl z-30">
+                <div className="absolute left-0 mt-2 w-36 bg-[#ffffff] dark:bg-gray-800 rounded-lg shadow-xl z-30">
                   <div className="flex flex-col gap-1 p-2">
                     <div
                       className="flex items-center justify-between px-3 py-1 rounded-lg hover:bg-border cursor-pointer transition"

@@ -31,7 +31,7 @@ export default function ReservesModals({ isOpen, onClose }: ListModalProps) {
             </thead>
             <tbody>
               {[1, 2, 3, 4].map((_, index) => (
-                <tr key={index} className="bg-subBg">
+                <tr key={index} className="bg-[#ffffff] dark:bg-gray-800">
                   <td className="p-2">۱۲ مرداد / ۱۴۰۱ – ۱۹:۳۳</td>
                   <td className="p-2 text-primary cursor-pointer">
                     تعداد مسافر ها

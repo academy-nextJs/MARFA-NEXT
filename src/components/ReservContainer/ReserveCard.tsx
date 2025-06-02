@@ -26,9 +26,8 @@ type showMapProps = {
 };
 export default function ReserveCard({ showMap, setShowMap }: showMapProps) {
   return (
-<Card className="w-full max-w-[260px] sm:w-[260px] h-96 rounded-xl shadow-md overflow-hidden text-right font-bold font-yekan dark:bg-gray-900 mx-auto">
-
-<CardHeader className="relative p-0">
+    <Card className="w-full max-w-[260px] sm:w-[260px] h-96 rounded-xl shadow-md overflow-hidden text-right font-bold font-yekan dark:bg-gray-900 mx-auto">
+      <CardHeader className="relative p-0">
         <img
           src="/heropic.jpg"
           alt="house"
@@ -62,7 +61,7 @@ export default function ReserveCard({ showMap, setShowMap }: showMapProps) {
       </CardHeader>
 
       <CardBody className="space-y-2 px-4 pt-3 pb-0 text-right py-4">
-        <h3 className="font-semibold text-base py-2">آپارتمان لوکس زعفرانیه</h3>
+        <h3 className="font-semibold text-base py-2">هتل سراوان رشت</h3>
         <div className="flex flex-wrap items-center justify-between text-xs text-gray-600">
           <span className="flex items-center gap-1">
             <BedDouble size={14} /> تهران، زعفرانیه

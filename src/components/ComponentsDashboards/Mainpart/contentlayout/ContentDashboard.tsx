@@ -21,7 +21,7 @@
 //           <div inView
 //             delay={idx / 5}
 //             key={idx}
-//             className="relative bg-subBg rounded-xl px-4 pt-4 flex flex-col items-center justify-between
+//             className="relative bg-[#ffffff] dark:bg-gray-800 rounded-xl px-4 pt-4 flex flex-col items-center justify-between
 //               w-full sm:w-[47%] md:w-[30%] lg:w-[22%] xl:w-[21%]"
 //           >
 //             <div className="absolute top-0 right-6 w-10 h-12 rounded-b-2xl bg-card-secondary2 flex justify-center items-center ">
@@ -84,7 +84,7 @@
 //           <div
 //             delay={0.35}
 //             inView
-//             className="lg:w-[60%] md:w-full  h-60 bg-subBg rounded-xl"
+//             className="lg:w-[60%] md:w-full  h-60 bg-[#ffffff] dark:bg-gray-800 rounded-xl"
 //           >
 //             {" "}
 //             <p></p>{" "}
@@ -131,7 +131,7 @@ const ContentDashboard = () => {
         {cardData.map((item, idx) => (
           <div
             key={idx}
-            className="relative bg-subBg rounded-xl px-4 pt-4 flex flex-col items-center justify-between
+            className="relative bg-[#ffffff] dark:bg-gray-800 rounded-xl px-4 pt-4 flex flex-col items-center justify-between
               w-full sm:w-[47%] md:w-[30%] lg:w-[22%] xl:w-[21%]"
           >
             <div className="absolute top-0 right-6 w-10 h-12 rounded-b-2xl bg-card-secondary2 flex justify-center items-center ">
@@ -185,7 +185,7 @@ const ContentDashboard = () => {
         ))}
 
         <div className="flex flex-col justify-center gap-8 w-full sm:flex-col lg:flex-row ">
-          <div className="lg:w-[60%] md:w-full h-60 bg-subBg rounded-xl"></div>
+          <div className="lg:w-[60%] md:w-full h-60 bg-[#ffffff] dark:bg-gray-800 rounded-xl"></div>
           <ProfileCompletion percentage={40} />
         </div>
 

@@ -38,7 +38,7 @@ export default function GuestCount({
             </thead>
             <tbody>
               {[1, 2, 3, 4].map((_, index) => (
-                <tr key={index} className="bg-subBg">
+                <tr key={index} className="bg-[#ffffff] dark:bg-gray-800">
                   <td className="p-2">ممد درزی</td>
                   <td className="p-2">5770050144</td>
                   <td className="p-2">مرد</td>

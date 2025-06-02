@@ -27,7 +27,7 @@ export default function ReserveModal({ isOpen, onClose }: ReserveModalProps) {
           </h2>
           <button
             onClick={onClose}
-            className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-danger px-4 py-1 text-danger hover:bg-subBg"
+            className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-danger px-4 py-1 text-danger hover:bg-[#ffffff] dark:bg-gray-800"
           >
             بستن <X />
           </button>

@@ -12,12 +12,14 @@ export const routes = [
 
 export const sellerRoutes = [
   { label: "داشبورد", href: "/dashboard/seller", icon: Home },
+  // { label: "2داشبورد", href: "/dashboard/seller2/property-create", icon: Home },
   { label: "اطلاعات کاربری", href: "/dashboard/seller/profile", icon: User },
   {
-    label: "مدیریت املاک", href: "/dashboard/seller/managementEstats", icon: Settings, children: [
-      { label: "املاک من", href: "/dashboard/seller/managementEstats/myHouses", icon: House },
-      { label: "ملک جدید", href: "/dashboard/seller/managementEstats/NewHouses", icon: HousePlus },
-    ]
+    label: "مدیریت املاک", href: "/dashboard/seller/managementEstats/MyHouses", icon: Settings
+    // , children: [
+      // { label: "املاک من", href: "/dashboard/seller/managementEstats/MyHouses", icon: House },
+      // { label: "ملک جدید", href: "/dashboard/seller/managementEstats/NewHouses", icon: HousePlus },
+    // ]
   },
   { label: "مدیریت رزروها", href: "/dashboard/seller/managementReserves", icon: PlusCircle },
   { label: "مدیریت مالی", href: "/dashboard/seller/payments", icon: Coins },

@@ -1,18 +1,11 @@
 "use client";
 
-import {
-  LogOut,
-  LogIn,
-  ChevronDown,
-  PlusCircle,
-} from "lucide-react";
+import { LogOut, LogIn, ChevronDown, PlusCircle } from "lucide-react";
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import PaymentsModal from "../../modal/PaymentsModal";
 import { footerSidebarSelect, routeSelect } from "../routeSelect";
-import MobileSidebar from "./MobileSidebar";
-import TabletSidebar from "./TabletSidebar";
 import SidRightMobile from "./SidRightMobile";
 import SidRightTablet from "./SidRightTablet";
 
@@ -62,14 +55,16 @@ const DashboardSideRight = ({
 
   return (
     <>
-      <div  className={`bg-subBg md:flex hidden transition-all duration-300 ease-in-out px-4 border py-8 gap-8 rounded-xl w-fit flex-col shadow-md ${view === 1
-          ? "opacity-100 scale-100 pointer-events-auto"
-          : "opacity-0 scale-95 pointer-events-none absolute"
-          }`}
+      <div
+        className={`bg-[#ffffff] dark:bg-gray-800 md:flex hidden transition-all duration-300 ease-in-out px-4 border py-8 gap-8 rounded-xl w-fit flex-col shadow-md ${
+          view === 1
+            ? "opacity-100 scale-100 pointer-events-auto"
+            : "opacity-0 scale-95 pointer-events-none absolute"
+        }`}
       >
         <div className="flex justify-between items-center mb-6 min-w-[200px]">
           <Link href={"/"} className="text-2xl font-bold">
-            دلتا
+            ALFA
           </Link>
           <LogOut
             onClick={() => setView(2)}
@@ -94,10 +89,11 @@ const DashboardSideRight = ({
                   <Link
                     href={href}
                     onClick={handleClick}
-                    className={`whitespace-nowrap flex justify-between items-center px-3 py-2 rounded-lg font-medium transition-colors ${isActive
-                      ? "dark:bg-accent dark:text-accent-foreground bg-subBg2"
-                      : "hover:bg-subBg2 bg-none"
-                      }`}
+                    className={`whitespace-nowrap flex justify-between items-center px-3 py-2 rounded-lg font-medium transition-colors ${
+                      isActive
+                        ? "dark:bg-accent dark:text-accent-foreground bg-gray-200 dark:bg-gray-800"
+                        : "hover:bg-gray-200 dark:bg-gray-800 bg-none"
+                    }`}
                   >
                     <div className="flex gap-2">
                       <Icon className="min-w-5 min-h-5 h-5 w-5" />
@@ -106,8 +102,9 @@ const DashboardSideRight = ({
                     {children && (
                       <ChevronDown
                         size={16}
-                        className={`transition-transform ${isDropdownOpen ? "rotate-180" : ""
-                          }`}
+                        className={`transition-transform ${
+                          isDropdownOpen ? "rotate-180" : ""
+                        }`}
                       />
                     )}
                   </Link>
@@ -121,10 +118,11 @@ const DashboardSideRight = ({
                           <Link
                             key={href}
                             href={href}
-                            className={`whitespace-nowrap flex justify-between items-center px-3 py-2 rounded-lg font-medium transition-colors ${isActive
-                              ? "dark:bg-accent dark:text-accent-foreground bg-subBg2"
-                              : "hover:bg-subBg2 bg-none"
-                              }`}
+                            className={`whitespace-nowrap flex justify-between items-center px-3 py-2 rounded-lg font-medium transition-colors ${
+                              isActive
+                                ? "dark:bg-accent dark:text-accent-foreground bg-gray-200 dark:bg-gray-800"
+                                : "hover:bg-gray-200 dark:bg-gray-800 bg-none"
+                            }`}
                           >
                             <div className="flex gap-2">
                               <Icon className="min-w-5 min-h-5 h-5 w-5" />
@@ -165,8 +163,14 @@ const DashboardSideRight = ({
               </svg>
               <Icon className="mx-4" />
               <div className="flex flex-col h-full justify-between">
-                <h2 className="text-lg font-bold"> {footerSidebarSelect.title} </h2>
-                <span className="text-sm text-subText"> {footerSidebarSelect.description} </span>
+                <h2 className="text-lg font-bold">
+                  {" "}
+                  {footerSidebarSelect.title}{" "}
+                </h2>
+                <span className="text-sm text-subText">
+                  {" "}
+                  {footerSidebarSelect.description}{" "}
+                </span>
               </div>
             </div>
             {show && (

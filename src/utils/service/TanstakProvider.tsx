@@ -9,6 +9,8 @@ import {
 } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { SessionProvider } from "next-auth/react";
+import { NextUIProvider } from "@nextui-org/react";
+import { HeroUIProvider } from "@heroui/react";
 
 type Theme = "dark" | "light";
 
@@ -66,17 +68,29 @@ function ThemeProvider({ children }: { children: ReactNode }) {
     </ThemeContext.Provider>
   );
 }
-
 export function Providers({ children }: { children: ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
-      {/* <SessionProvider> */}
-
-      <ThemeProvider>{children}</ThemeProvider>
-      {/* </SessionProvider> */}
+      <SessionProvider>
+      <HeroUIProvider>
+        <ThemeProvider>{children}</ThemeProvider>
+      </HeroUIProvider>
+      </SessionProvider>
     </QueryClientProvider>
   );
 }
+
+
+// export function Providers({ children }: { children: ReactNode }) {
+//   return (
+//     <QueryClientProvider client={queryClient}>
+//       {/* <SessionProvider> */}
+
+//       <ThemeProvider>{children}</ThemeProvider>
+//       {/* </SessionProvider> */}
+//     </QueryClientProvider>
+//   );
+// }
 //  "use client";
 
 // import {

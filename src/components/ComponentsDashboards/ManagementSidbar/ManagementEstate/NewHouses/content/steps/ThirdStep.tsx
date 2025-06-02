@@ -1,4 +1,5 @@
-import ReserveMap from '@/components/reserve/map/ReserveMap'
+import MapComponent2 from '@/components/common/map/MapComponent'
+import ReserveMap from '@/components/common/map/ReserveMap'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import React from 'react'
@@ -18,7 +19,8 @@ const ThirdStep = () => {
                 </span>
             </div>
             <div className='w-7/12 max-lg:w-full h-[366.65509033203125]'>
-                <ReserveMap />
+                {/* <ReserveMap/> */}
+                <MapComponent2/>
             </div>
         </div>
     )

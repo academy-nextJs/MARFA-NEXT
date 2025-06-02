@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import DashboardSideRight from "./SlidersComponents/DashboardSideRight";
 import HeaderDashboard from "./HederDashboard/HeaderDashbooard";
 import { Providers } from "@/utils/service/TanstakProvider";
-
 const Layout = ({
   children,
 }: Readonly<{
@@ -12,8 +11,8 @@ const Layout = ({
   const [view, setView] = useState(1);
 
   return (
-    // <Providers attribute="class" defaultTheme="dark">
-      <div className="bg-bgDash h-dvh p-4 gap-5 flex">
+    <Providers>
+      <div className="bg-[#ECECEC] dark:bg-gray-900 h-dvh p-4 gap-5 flex">
         <DashboardSideRight view={view} setView={setView} />
         <div className="w-full max-xl:w-full flex flex-col gap-5">
           <HeaderDashboard />
@@ -22,7 +21,7 @@ const Layout = ({
           </div>
         </div>
       </div>
-    // </Providers>
+     </Providers>
   );
 };
 

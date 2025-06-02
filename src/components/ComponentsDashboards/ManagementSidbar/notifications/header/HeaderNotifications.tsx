@@ -1,7 +1,7 @@
 'use client'
 import CommonSelect from '@/components/common/inputs/common/CommonSelect'
-import CommonModal from '@/components/dashboard/modal/CommonModal'
 import React from 'react'
+import CommonModal from '../../manage-reserves/CommonModal'
 
 const HeaderNotifications = () => {
     return (
