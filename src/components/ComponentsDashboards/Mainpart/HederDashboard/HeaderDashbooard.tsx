@@ -18,7 +18,7 @@ import ModalExit from "../../modal/ModalExit";
 import ModalNotification from "../../modal/ModalNotification";
 import { useTheme } from "@/utils/service/TanstakProvider";
 
-const HeaderDashboard: React.FC = () => {
+const HeaderDashboard: React.FC = ({customer , name} ) => {
   const { theme, toggleTheme } = useTheme();
   const [modalView, setModalView] = React.useState(false);
   const moreRef = useRef<HTMLDivElement | null>(null);
@@ -53,7 +53,7 @@ const HeaderDashboard: React.FC = () => {
           );
         })}
         <div></div>
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 items-center"> 
           <button
             onClick={toggleTheme}
             className="flex items-center justify-center w-8 h-8 rounded-full hover:bg-gray-200 dark:bg-gray-800 transition-colors"
@@ -88,8 +88,8 @@ const HeaderDashboard: React.FC = () => {
                 className="size-[40px] border-0 outline-none bg-secondary-light rounded-[8px]"
               />
               <div className="flex max-md:hidden flex-col justify-between">
-                <h2> امیر محمد ملایی </h2>
-                <span className="text-muted-foreground text-sm"> خریدار </span>
+                <h2> {name}  </h2>
+                <span className="text-muted-foreground text-sm"> {customer} </span>
               </div>
               {!modalView && (
                 <ChevronDown className="cursor-pointer" size={12} />

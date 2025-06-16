@@ -1,7 +1,6 @@
 "use client";
 import ProviderNextUI from "@/app/RootLayout";
 import LayoutDashboard from "@/components/ComponentsDashboards/Mainpart/Layout";
-import { Providers } from "@/utils/service/TanstakProvider";
 import React from "react";
 const layout = ({
   children,

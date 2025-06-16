@@ -41,7 +41,7 @@ export default function RecentReserveClient({ reservations }: Props) {
       {reservations.map((reservation) => (
         <div
           key={reservation.id}
-          className="flex flex-col md:flex-row md:justify-between md:items-center bg-secondary-light2 dark:bg-secondary-light3 w-full rounded-xl mb-2 relative"
+          className="flex flex-col md:flex-row md:justify-between md:items-center bg-secondary-light2 bg-gray-8003 w-full rounded-xl mb-2 relative"
         >
           <div className="hidden md:flex md:flex-row md:w-full md:items-center">
             <div className="w-24 md:w-28 lg:w-36 h-14 bg-bacgkroundW rounded-xl mr-2 md:mr-4 flex-shrink-0"></div>

@@ -104,13 +104,14 @@ import Image from "next/image";
 import React from "react";
 import img from "/public/Rectangle 6486.png";
 import ProfileCompletion from "./ProfileCompletion";
-import RecentReserve from "./RecentReserve";
+import RecentReserve from "./RecentReserve/RecentReserve";
+// import RecentReserve from "./RecentReserve";
 
 const cardData = [
   { id: 1, title: "5", subtitle: "کل رزرو‌ها" },
-  { id: 2, title: "12", subtitle: "رزرو های فعال" },
-  { id: 3, title: "3", subtitle: "علاقه مندی ها" },
-  { id: 4, title: "20", subtitle: "نظرات" },
+  { id: 2, title: "5", subtitle: "رزرو های فعال" },
+  { id: 3, title: "5", subtitle: "رزرو های انجام نشده" },
+  { id: 4, title: "5", subtitle: "علاقه مندی ها" },
 ];
 
 const getIcon = (id: number) => {
@@ -189,7 +190,7 @@ const ContentDashboard = () => {
           <ProfileCompletion percentage={40} />
         </div>
 
-        <RecentReserve />
+        {/* <RecentReserve/> */}
       </div>
     </div>
   );

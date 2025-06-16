@@ -44,7 +44,7 @@ export default async function RecentReserve() {
   const reservations = await getReservations();
 
   return (
-    <div className="w-full flex flex-col justify-center gap-4 px-2 md:px-4 bg-background dark:bg-secondary-light2 rounded-xl">
+    <div className="w-full flex flex-col justify-center gap-4 px-2 md:px-4 bg-background dark:bg-gray-800 rounded-xl">
       <div className="w-full flex flex-row justify-between px-2 md:px-4 pt-4">
         <h2 className="items-center flex gap-2 md:gap-4 text-sm md:text-base lg:text-lg">
           <svg

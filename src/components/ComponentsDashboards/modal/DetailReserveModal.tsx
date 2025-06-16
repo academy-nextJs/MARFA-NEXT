@@ -12,6 +12,7 @@ import { SplitNumber } from "@/utils/helper/spliter/SplitNumber";
 import PaymentsModalReserves from "./PaymentsModalReserves";
 import PassengersModal from "./PassengersModal";
 import CommonButton from "@/components/common/Button/CommonButton";
+import ChangeModalReserves from "./ChangeModalReserves";
 
 const DetailReserveModal = () => {
   const [open, setOpen] = useState<boolean>(false);
@@ -104,13 +105,15 @@ const DetailReserveModal = () => {
                 <h2 className="text-subText whitespace-nowrap"> برچسب ها: </h2>
                 <div className="flex flex-wrap gap-2 mt-2 text-sm">
                   <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground">
-                    رایگان
+                    آپارتمان
                   </span>
                   <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground">
-                    تایید شده
+                  آپارتمان
+
                   </span>
                   <span className="px-3 py-1 rounded-full bg-primary text-primary-foreground">
-                    پرداخت شده
+                  آپارتمان
+
                   </span>
                 </div>
               </div>
@@ -121,6 +124,8 @@ const DetailReserveModal = () => {
         <div className="mt-6 flex justify-end gap-4">
           <PassengersModal />
           <PaymentsModalReserves />
+          <ChangeModalReserves/>
+
         </div>
       </DialogContent>
     </Dialog>

@@ -22,7 +22,8 @@ export const sellerRoutes = [
     // ]
   },
   { label: "مدیریت رزروها", href: "/dashboard/seller/managementReserves", icon: PlusCircle },
-  { label: "مدیریت مالی", href: "/dashboard/seller/payments", icon: Coins },
+  // { label: "مدیریت مالی", href: "/dashboard/seller/payments", icon: Coins },
+  { label: "مدیریت مالی", href: "/dashboard/seller/financialmanagement", icon: Coins },
   { label: "مدیریت نظرات", href: "/dashboard/seller/manage-comments", icon: SquaresSubtract },
   { label: "اعلان ها", href: "/dashboard/seller/notifications", icon: BellDot },
 ] as Routes[]

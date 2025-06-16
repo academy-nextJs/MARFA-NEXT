@@ -1,6 +1,6 @@
 "use client";
 import { HeroUIProvider } from "@heroui/react";
-import { NextUIProvider } from "@nextui-org/react";
+// import { NextUIProvider } from "@nextui-org/react";
 import './(main)/globals.css';
 import { Providers } from "@/utils/service/TanstakProvider";
 

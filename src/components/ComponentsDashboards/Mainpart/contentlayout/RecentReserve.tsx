@@ -5,7 +5,7 @@ import img from "/public/Line 2.png";
 
 const RecentReserve = () => {
   return (
-    <div  className="w-full flex flex-col justify-center gap-4 px-4 bg-background dark:bg-secondary-light2 rounded-xl">
+    <div className="w-full flex flex-col justify-center gap-4 px-4 bg-background dark:bg-gray-800 rounded-xl">
       <div className="w-full flex flex-row justify-between px-4 pt-4">
         <h2 className="items-center flex gap-4">
           <SaveIcon size={20} />
@@ -41,18 +41,18 @@ const RecentReserve = () => {
       </div>
       <Image alt="dashboard-img" src={img} className="w-full h-1 " />
 
-      <div className="flex justify-between flex-row items-center bg-textComment dark:bg-secondary-light3 w-full h-16 rounded-xl">
+      <div className="flex justify-between flex-row items-center bg-textComment bg-gray-8003 w-full h-16 rounded-xl">
         <div className="w-36 h-14 bg-bacgkroundW rounded-xl mr-4">
           {/* iamge */}
         </div>
       </div>
-      <div className="flex justify-between flex-row items-center bg-textComment dark:bg-secondary-light3 w-full h-16 rounded-xl">
+      <div className="flex justify-between flex-row items-center bg-textComment bg-gray-8003 w-full h-16 rounded-xl">
         <div className="w-36 h-14 bg-bacgkroundW rounded-xl mr-4">
           {" "}
           {/* iamge */}
         </div>
       </div>
-      <div className="flex justify-between flex-row items-center bg-textComment dark:bg-secondary-light3 w-full h-16 rounded-xl">
+      <div className="flex justify-between flex-row items-center bg-textComment bg-gray-8003 w-full h-16 rounded-xl">
         <div className="w-36 h-14 bg-bacgkroundW rounded-xl mr-4">
           {" "}
           {/* iamge */}

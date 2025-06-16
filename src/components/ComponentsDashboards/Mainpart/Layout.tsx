@@ -15,7 +15,7 @@ const Layout = ({
       <div className="bg-[#ECECEC] dark:bg-gray-900 h-dvh p-4 gap-5 flex">
         <DashboardSideRight view={view} setView={setView} />
         <div className="w-full max-xl:w-full flex flex-col gap-5">
-          <HeaderDashboard />
+          <HeaderDashboard  customer="فروشنده" name="سبحان عرب"/>
           <div className="flex-1 max-md:mb-[50px] overflow-y-auto pr-2 custom-scrollbar">
             {children}
           </div>

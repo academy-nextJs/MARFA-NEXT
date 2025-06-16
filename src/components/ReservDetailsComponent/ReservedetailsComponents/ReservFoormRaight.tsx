@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FiWifi, FiCoffee, FiTv, FiMapPin } from "react-icons/fi";
+// import { FiWifi, FiCoffee, FiTv, FiMapPin } from "react-icons/fi";
 import HotelFacilities from "../HotelFacilities";
 import LoginLogOutReserv from "./LoginLogOutReserv";
 

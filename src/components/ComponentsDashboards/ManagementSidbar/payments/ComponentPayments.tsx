@@ -2,6 +2,7 @@ import React from "react";
 import HeaderPayments from "./header/HeaderPayments";
 import ContentPayment from "./content/ContentPayments";
 
+
 const ComponentPayments = () => {
   return (
     <div className="px-4 bg-[#ffffff] dark:bg-gray-800 rounded-xl py-4 flex flex-col gap-8">
@@ -23,6 +24,7 @@ const ComponentPayments = () => {
           strokeDasharray="7 7"
         />
       </svg>
+    
       <ContentPayment />
     </div>
   );

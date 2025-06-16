@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       <ContentDashboard/>
-      {/* داشبورد */}
+      {/* داشبورد خریدار*/}
 
     </div>
   );
