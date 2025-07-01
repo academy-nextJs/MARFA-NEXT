@@ -6,6 +6,7 @@ import CardCategorySlider from '@/components/common/Card/CardCategorySlider/Card
 
 
 export default function CategoryCarousel({ data }: { data: Category[] }) {
+  console.log(data)
   const breakpoints = {
     0: {
       slidesPerView: 1,
@@ -29,7 +30,7 @@ export default function CategoryCarousel({ data }: { data: Category[] }) {
         chipText="دسته بندی"
       />
       <Carousel className="mt-4" breakpoints={breakpoints}>
-        {data.map((item) => (
+        {data.data.map((item) => (
           <CardCategorySlider
             key={item.id}
             href={`houses/${item.id}`}
